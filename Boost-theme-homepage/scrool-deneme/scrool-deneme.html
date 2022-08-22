@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky deneme</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+        .header {
+            width: 100%;
+            height: 600px;
+            border: 1px solid red;
+        }
+        .section {
+            margin: 20px 0;
+            display: flex;
+        }
+        .section-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            
+        }
+        .left-area {
+            flex: 0 0 48%;
+            border: 1px solid red;
+            position: sticky;
+            top: 10px;
+            align-self: flex-start;
+            height: 500px;
+            width: 500px;
+        }
+        
+        .right-area {
+            flex: 0 0 48%;
+            border: 1px solid red;
+            margin-left: 10px;
+            position: sticky;
+            top: 10px;
+            align-self: flex-start;
+        }
+        .my-block {
+            margin: 20px 0;
+            margin-bottom: 30px;
+            border: 1px solid green;
+            height: 500px;
+            width: 500px;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 800px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">content area</div>
+    <div class="section">
+        <div class="section-container">
+            <div class="left-area">left side</div>
+            <div class="right-area">
+                <div class="my-block">ali</div>
+                <div class="my-block">veli</div>
+                <div class="my-block">deli</div>
+                <div class="my-block">nereli</div>
+
+            </div>
+        </div>
+    </div> 
+    <div class="footer">
+        <div class="footer-inner">Footer area</div>
+    </div>   
+</body>
+</html>

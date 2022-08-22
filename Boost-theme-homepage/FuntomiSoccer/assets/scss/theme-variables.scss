@@ -1,0 +1,76 @@
+//media queries//
+$sm:540px;
+$md:768px;
+$lg:960px;
+$xl:1200px;
+
+.showcase-container, .horizontal-showcase-image-inner-border {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.showcase-gold, .horizontal-showcase-gold {
+  background: linear-gradient(180deg, #F8E899 0%, #EAD26E 100%);
+  border-radius: 20px;
+  border: 2px solid #D0B43C;
+}
+.showcase-silver, .horizontal-showcase-silver {
+  background:linear-gradient(180deg, #C3CED5 0%, #EBEFF4 100%);
+  border-radius: 20px;
+  border: 2px solid #C4CACF;
+}
+.showcase-bronze, .horizontal-showcase-bronze {
+  background: linear-gradient(180deg, #BF9462 0%, #FFDEB2 100%);
+  border-radius: 20px;
+  border: 2px solid #CAA87D;
+}
+.circle-showcase-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.custom-button {
+  background-color: white;
+  border-radius: 60px;
+  border: none;
+  transition: .5s;
+  padding: 16px;
+  font-size: 16px;
+  color: rgba(0, 133, 255, 1);
+  @media screen and (max-width:$lg) {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+.horizontal-showcase-increase-button {
+  color: rgba(0, 133, 255, 1);
+  width: 30px;
+  height: 30px;
+}
+.mb-md-none {
+  @media screen and (min-width:$md) {
+    margin-bottom:0;
+  }
+}
+.w-btn {
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  @media screen and (max-width:$lg) {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+.btn-orange {
+  background-color:rgba(255, 150, 74, 1);
+}
+.btn-blue {
+  background: #0085FF;
+}

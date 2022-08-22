@@ -1,0 +1,249 @@
+$sm:540px;
+$md:768px;
+$lg:960px;
+$xl:1200px;
+$primary-text-color:#121212;
+$accent-color:#3752B2;
+$primary-background-color:#FFFFFF;
+$secondary-background-color:#F3F3F3;
+$subdued-text:rgba(18, 18, 18, 0.75);
+$border-dark:#7D7D7D;
+$border-light: #D0D0D0;
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//fonts//
+.button-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+}
+.body-text-1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height:27.52px;
+    letter-spacing: 0.04em;
+}
+.body-text-2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 21px;
+}
+.body-text-caption {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+}
+.text-micro {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+}
+.heading-0 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 68px;
+    @media screen and (max-width: $sm) {
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+.heading-1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    @media screen and (max-width: $sm) {
+        font-size: 30px;
+        line-height: 39px;
+    }
+}
+.heading-2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    @media screen and (max-width: $sm) {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+.heading-3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20.88px;
+    @media screen and (max-width: $sm){
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+.dropdown-border {
+    border: 1px solid $border-light;
+}
+
+.footer-mb {
+    margin-bottom: 64px;
+    @media screen and  (max-width: $md){
+        margin-bottom: 40px;
+    }
+}
+.dropdown-input-inner {
+    padding: 15px;
+    color: $subdued-text;
+    width: 45%;
+}
+.theme-mr-1 {
+    margin-right: 8px;
+}
+.theme-mr-2 {
+    margin-right: 12px;
+}
+.theme-mb-1 {
+    margin-bottom: 8px;
+}
+.theme-mb-2 {
+    margin-bottom:12px;
+}
+.theme-mb-3 {
+    margin-bottom: 18px;
+}
+.theme-pt-1 {
+    padding-top: 12px;
+}
+.theme-review-p {
+        padding: 16px;
+}
+.form-mb {
+    margin-bottom: 16px;
+}
+.featured-item-p {
+    @media screen and (max-width: $md) {
+        margin-bottom: 10px;
+    }
+}
+.section-padding {
+    padding-bottom: 64px;
+    @media screen and (max-width: $md) {
+        padding-bottom: 0;
+    }
+}
+
+//select forms//
+.select-form {
+    color: $subdued-text;
+    padding: 12px 35px 12px 12px;
+    appearance: none;
+    background: url("../img/icons/chevron down.svg")no-repeat center center;
+    background-position: 90%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+}
+.select-form-title {
+    color: $subdued-text;
+}
+//form - select menu //
+.form-control {
+    max-width:331px;
+    border-radius: 0;
+
+    &:focus {
+        box-shadow: none;
+        border: 1px solid $border-dark;
+    }
+}
+//all products//
+.item-price {
+    color: $primary-text-color;
+}
+//input size//
+.input-size-search {
+    width: 50%;
+    @media screen and (max-width: $lg) {
+        width: 100%;
+    }
+}
+.input-size-email {
+    max-width: 100%;
+    @media screen and (max-width: $lg) {
+        width: 100%;
+    }
+}
+.main-padding {
+    padding: 64px 0;
+    @media screen and (max-width: $md) {
+        padding: 40px 0;
+    }
+}
+.content-padding {
+    padding: 64px 0;
+    @media screen and (max-width: $md) {
+        padding: 40px 12px;
+    }
+}
+
+.menu-item {
+    a {
+        color: $primary-text-color;
+        position: relative;
+        padding-right: 22px;
+        &.has-dropdown {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                right: 0;
+                width: 8.71px;
+                height: 5.06px;
+                background:url("../img/icons/chevron down.svg") no-repeat center center;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        &:hover {
+            text-decoration: underline;
+            background: none;
+        }
+    }
+}
+.underline-none {
+    &:hover {
+        text-decoration: none!important;
+    }
+}
+.dropdown-width-1 {
+    width: 300px;
+}
+.dropdown-inner-top {
+    padding: 1px 16px 16px;
+    border-bottom: 1px solid $border-light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 21px;
+}
+.dropdown-inner-bottom {
+    margin: 4px;
+}
+.custom-input-size {
+    flex: 0 0 60%!important;
+    @media screen and (max-width: $md) {
+        flex: 1 0 0!important;
+    }
+}

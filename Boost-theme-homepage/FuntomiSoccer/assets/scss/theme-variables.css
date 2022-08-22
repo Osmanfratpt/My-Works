@@ -1,0 +1,96 @@
+.showcase-container, .horizontal-showcase-image-inner-border {
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.showcase-gold, .horizontal-showcase-gold {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8E899), to(#EAD26E));
+  background: linear-gradient(180deg, #F8E899 0%, #EAD26E 100%);
+  border-radius: 20px;
+  border: 2px solid #D0B43C;
+}
+
+.showcase-silver, .horizontal-showcase-silver {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C3CED5), to(#EBEFF4));
+  background: linear-gradient(180deg, #C3CED5 0%, #EBEFF4 100%);
+  border-radius: 20px;
+  border: 2px solid #C4CACF;
+}
+
+.showcase-bronze, .horizontal-showcase-bronze {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BF9462), to(#FFDEB2));
+  background: linear-gradient(180deg, #BF9462 0%, #FFDEB2 100%);
+  border-radius: 20px;
+  border: 2px solid #CAA87D;
+}
+
+.circle-showcase-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.custom-button {
+  background-color: white;
+  border-radius: 60px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 16px;
+  font-size: 16px;
+  color: #0085ff;
+}
+
+@media screen and (max-width: 960px) {
+  .custom-button {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+
+.horizontal-showcase-increase-button {
+  color: #0085ff;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .mb-md-none {
+    margin-bottom: 0;
+  }
+}
+
+.w-btn {
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .w-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+.btn-orange {
+  background-color: #ff964a;
+}
+
+.btn-blue {
+  background: #0085FF;
+}
+/*# sourceMappingURL=theme-variables.css.map */

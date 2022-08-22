@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style-header.css">
+    <link rel="stylesheet" href="css/style-content.css">
+    <link rel="stylesheet" href="css/style-footer.css">
+    <title>Anasayfa</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-left">
+                    <nav class="navbar navbar-light">
+                        <div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <form class="header-navbar-form">
+                                        <select name="exchance" id="exchance">
+                                            <option value="">United States (USD $)</option>
+                                            <option value="">Australia (AUD $)</option>
+                                            <option value="">Canada (CAD $)</option>
+                                            <option value="">United Kingdom (GBP €)</option>
+                                        </select>
+                                    </form>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="header-search-navbar">
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
+                                            <input class="header-left-search" type="text"
+                                                placeholder="Search our store">
+                                        </a>
+                                    </div>
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item nav-link-padding">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <button class="dropbtn" onclick="myFunction()">
+                                                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                                                <a class="nav-icon" href="#"><i class="fa-solid fa-angle-down"></i></a>
+                                            </button>
+                                            <div class="dropdown-content" id="myDropdown">
+                                                <div class="dropdown-inner"><a href="#" class="nav-margin">Shop</a>
+                                                    <a href="#" class="angle-down">
+                                                        <i class="fa-solid fa-angle-down"></i></a>
+                                                </div>
+                                                <div class="dropdown-inner"><a href="#" class="nav-margin">By
+                                                        personality</a><a href="#" class="angle-down"><i
+                                                            class="fa-solid fa-angle-down"></i></a>
+                                                </div>
+                                                <div class="dropdown-inner"><a href="#" class="nav-margin">Filter
+                                                        by</a><a href="#" class="angle-down"><i
+                                                            class="fa-solid fa-angle-down"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item nav-link-padding">
+                                            <a class="nav-link active" aria-current="page" href="#">All Collection</a>
+                                        </li>
+
+                                        <li class="nav-item nav-link-padding">
+                                            <a class="nav-link active" aria-current="page" href="#"> About US</a>
+                                        </li>
+
+                                        <li class="nav-item nav-link-padding">
+                                            <a class="nav-link active" aria-current="page" href="#"> Blog </a>
+                                        </li>
+
+                                        <li class="nav-item nav-link-padding">
+                                            <a class="nav-link active" aria-current="page" href="#"> Demos</a>
+                                        </li>
+                                    </ul>
+                                    <div class="social">
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <img class="header-left-logo" src="IMG/logo.png" alt="">
+                    <div class="header-search">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="header-left-search" type="text" placeholder="Search our store">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <form class="header-right-form">
+                        <select name="exchance" id="exchance">
+                            <option value="">United States (USD $)</option>
+                            <option value="">Australia (AUD $)</option>
+                            <option value="">Canada (CAD $)</option>
+                            <option value="">United Kingdom (GBP €)</option>
+                        </select>
+                    </form>
+                    <div class="header-right-icon">
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                        <a href="#" class="shopping"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-responsive-search">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="header-left-search" type="text" placeholder="Search our store">
+                    </a>
+                </div>
+                <div class="header-navigation">
+                    <ul class="header-navigation-top">
+                        <li><a class="nav-a nav-bottom" href="#">Home</a></li>
+                        <li class="li-shop-navigation-first"><a class="nav-a nav-bottom" href="#">Shop <i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="shop-navigation-first-div">
+                                    <ul class="shop-navigation">
+                                        <li><a href="#">Shop</a></li>
+                                        <li><a href="#">View all</a></li>
+                                        <li><a href="#">Toys</a></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Stationery</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                    <ul class="shop-navigation">
+                                        <li><a href="#">By personality</a></li>
+                                        <li><a href="#">Shy</a></li>
+                                        <li><a href="#">Happy</a></li>
+                                        <li><a href="#">Funny</a></li>
+                                        <li><a href="#">Naughty</a></li>
+                                        <li><a href="#">Adventurous</a></li>
+                                    </ul>
+                                    <ul class="shop-navigation">
+                                        <li><a href="#">Filter by</a></li>
+                                        <li><a href="#">New</a></li>
+                                        <li><a href="#">Gift for kids</a></li>
+                                        <li><a href="#">Gift for babies</a></li>
+                                        <li><a href="#">Gift for creatives</a></li>
+                                        <li><a href="#">Last chance to buy</a></li>
+                                    </ul>
+                                    <div class="shop-navigation">
+                                        <img src="IMG/header navigation shop img.png" alt="">
+                                        <p> Gifts for kids</p>
+                                        <a href="#"> The perfect little present</a>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a class="nav-a nav-bottom" href="#">All Collections</a></li>
+                        <li class="li-about-us-navigation"><a class="nav-a nav-bottom" href="#">About Us<i
+                                    class="fa-solid fa-angle-down"></i>
+                                <ul class="about-us-navigation">
+                                    <li><a href="#">Our story</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </a></li>
+                        <li><a class="nav-a nav-bottom" href="#">Blog</a></li>
+                        <li class="li-demos-navigation"><a class="nav-a nav-bottom" href="#">Demos <i
+                                    class="fa-solid fa-angle-down"></i>
+                                <ul class="demos-navigation">
+                                    <li><a href="#">Flourish</a></li>
+                                    <li><a href="#">Inspire</a></li>
+                                    <li><a href="#">Spark(children's toys)</a></li>
+                                </ul>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="header-store-message">
+                    <p class="header-store-message-text">Free Shipping Over $50</p>
+                    <p class="header-store-message-text">Flash Sale - 5% Off Everything</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="slide-show">
+                <div class="show-gallery">
+                    <img class="show-img" src="IMG/content-top-slider/content-top-slick-1.png" alt="">
+                    <div class="show-text">
+                        <div class="show-1-text-1">
+                            <h1>Hello Ricemonsters!</h1>
+                            Get a little bit more noodoll love from your hugs!
+                            <p><a href="#">Shop Toys</a><a href="#">Shop Home</a></p>
+                        </div>
+                        <div class="show-1-text-2">
+                            <p>Ricebombshell</p>
+                            <a>$22.50</a>
+                        </div>
+                        <div class="show-1-text-3">
+                            <p>Ricehaddock</p>
+                            <a>$22.50</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-gallery-2 ">
+                    <img class="show-img" src="IMG/content-top-slider/content-top-slick-2.png" alt="">
+                    <div class="show-text-2">
+                        <div class="show-2-text-1">
+                            <h1>Home & Accessories</h1>
+                            Give your cosy corners these extra huggable toys.
+                            <p><a href="#">Shop Now</a><a href="#">Shop Accessories</a></p>
+                        </div>
+                        <div class="show-2-text-2">
+                            <p> Ricejagger </p>
+                            <a href="">$22.50</a>
+                        </div>
+                        <div class="show-2-text-3">
+                            <p>Ricerain</p>
+                            <a href="">$22.50</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-gallery-3">
+                    <img class="show-img" src="IMG/content-top-slider/content-top-slick-3.png" alt="">
+                    <div class="show-text-3">
+                        <div class="show-3-text-1">
+                            <h1>Sshh!</h1>
+                            Ricepuffy is sleeping! Sweet dreams, Ricepuffy
+                            <p><a href="#">Shop Now</a> <a href="#">Shop Toys</a></p>
+                        </div>
+                        <div class="show-3-text-2">
+                            <p>Ricejagger </p>
+                            <a href="">$22.50</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-hover-text">
+                Shop our collections
+            </div>
+            <div class="showcase-section">
+                <div class="section">
+                    <div class="showcase-top">
+                        <img src="IMG/content-top-hover/top-hover-1.png" alt="">
+                    </div>
+                    <div class="show-case-bottom">
+                        <a href="#">Toys</a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="showcase-top">
+                        <img src="IMG/content-top-hover/top-hover-2.png" alt="">
+                    </div>
+                    <div class="show-case-bottom"><a href="#">Home</a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="showcase-top">
+                        <img src="IMG/content-top-hover/top-hover-3.png" alt="">
+                    </div>
+                    <div class="show-case-bottom"><a href="#">Stationery</a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="showcase-top">
+                        <img src="IMG/content-top-hover/top-hover-4.png" alt="">
+                    </div>
+                    <div class="show-case-bottom"><a href="#">Accessories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-list-text">
+                As featured in...
+            </div>
+            <div class="logo-list">
+                <img src="IMG/content-logo-list/logo-list-1.png" alt="">
+                <img src="IMG/content-logo-list/logo-list-2.png" alt="">
+                <img src="IMG/content-logo-list/logo-list-3.png" alt="">
+                <img src="IMG/content-logo-list/logo-list-4.png" alt="">
+                <img src="IMG/content-logo-list/logo-list-5.png" alt="">
+            </div>
+            <div class="promotional">
+
+            </div>
+            <div class="quick-buy-slider-text">
+                Featured collection
+                <p><a href="#">Shop now</a></p>
+            </div>
+            <div class="quick-buy-slider">
+                <div class="slick-track-1">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-1.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                        <div class="sold-out">Sold Out</div>
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Ricebeet</a>
+                    </div>
+                    <div class="slick-track-price">
+                        <p class="slic-track-line-price"> $22.50</p>
+                    </div>
+                </div>
+                <div class="slick-track-2">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-2.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Riceslow</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $25.00
+                    </div>
+                </div>
+                <div class="slick-track-3">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-3.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                        <div class="on-sale">On Sale</div>
+
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Ricerain</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $25.00
+                    </div>
+                </div>
+                <div class="slick-track-4">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-4.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Ricebombshell</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $22.50
+                    </div>
+                </div>
+                <div class="slick-track-5">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-5.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+                    <div class="slick-track-text">
+                        <a href="#">Ricekating</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $25.00
+                    </div>
+                </div>
+                <div class="slick-track-6">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-6.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+                    <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    <div class="slick-track-text">
+                        <a href="#">Ricebow</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $25.00
+                    </div>
+                </div>
+                <div class="slick-track-7">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-7.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Ricejagger</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $22.50
+                    </div>
+                </div>
+                <div class="slick-track-8">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-8.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Ricetwinkle</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $25.00
+                    </div>
+                </div>
+                <div class="slick-track-9">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-9.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Ricepear</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $13.50
+                    </div>
+                </div>
+                <div class="slick-track-10">
+                    <div class="slick-track-img">
+                        <img src="IMG/quick-buy/slick-track-10.png" alt="">
+                        <div class="quick-buy"><a href="#">Quick Buy</a> </div>
+                    </div>
+
+                    <div class="slick-track-text">
+                        <a href="#">Ricehaddock</a>
+                    </div>
+                    <div class="slick-track-price">
+                        $22.50
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="middle-half-left">
+                    <h1>Ricejagger</h1>
+                    <p>Rocking Saturday night, Ricejagger just done his best gig ever in London. What a performance !
+                    </p>
+                    <a href="#">Rock now</a>
+                </div>
+                <div class="middle-half-right"><img src="IMG/jagger/jagger.png" alt="">
+                </div>
+            </div>
+            <div class="reading">
+                <h1>Meet the characters</h1>
+                <p>Explore Ricetown below!</p>
+            </div>
+            <div class="overlaps">
+                <div class="overlaps-container">
+                    <div class="left-area">
+                        <div class="left-area-img">
+                            <img src="IMG/overlaps/overlast-1.png" alt="">
+                        </div>
+                        <div class="left-area-text">
+                            <h2>Ricetown Farm</h2>
+                            <div class="left-area-large-text">
+                                Showcase up to six products together
+                            </div>
+                            <a class="large-text-a" href="#">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right-area">
+                        <div class="my-block">
+                            <div class="my-block-img">
+                                <img src="IMG/overlaps/overlast-2.png" alt="">
+                                <a class="my-block-quick-buy" href="#">Quick Buy</a>
+                            </div>
+                            <div class="my-block-text">
+                                Ricewool
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                        <div class="my-block">
+                            <div class="my-block-img">
+                                <img src="IMG/overlaps/overlast-2.png" alt="">
+                                <a class="my-block-quick-buy" href="#">Quick Buy</a>
+                            </div>
+                            <div class="my-block-text">
+                                Ricewool
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                        <div class="my-block">
+                            <div class="my-block-img">
+                                <img src="IMG/overlaps/overlast-2.png" alt="">
+                                <a class="my-block-quick-buy" href="#">Quick Buy</a>
+                            </div>
+                            <div class="my-block-text">
+                                Ricewool
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="video/Noodoll - Making a toy.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="reviews">
+                <h1>Ricereviews</h1>
+                <div class="text-slider">
+                    <div class="text-track">
+                        <div class="text">
+                            <div class="text-inside">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <p>Even better than in the photos! Unusual yet delightful :)</p>
+                                -Tammy Beaumont
+                            </div>
+                            <div class="text-inside">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <p>Even better than in the photos! Unusual yet delightful :)</p>
+                                -Tammy Beaumont
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-track">
+                        <div class="text">
+                            <div class="text-inside">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <p>Even better than in the photos! Unusual yet delightful :)</p>
+                                -Tammy Beaumont
+                            </div>
+                            <div class="text-inside">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <p>Even better than in the photos! Unusual yet delightful :)</p>
+                                -Tammy Beaumont
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-track">
+                        <div class="text">
+                            <div class="text-inside">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <p>Even better than in the photos! Unusual yet delightful :)</p>
+                                -Tammy Beaumont
+                            </div>
+                            <div class="text-inside">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <p>Even better than in the photos! Unusual yet delightful :)</p>
+                                -Tammy Beaumont
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-row">
+                <div class="gallery">
+                    <div class="gallery-img-1">
+                        <img src="IMG/content-last/content-last-1.jpg" alt="">
+                        <div class="gallery-text-1">
+                            <a href="#"> Blankets</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-2">
+                        <img src="IMG/content-last/content-last-2.jpg" alt="">
+                        <div class="gallery-text-2">
+                            <a href="#"> Nightlight</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-3">
+                        <img src="IMG/content-last/content-last-3.jpg" alt="">
+                        <div class="gallery-text-3">
+                            <a href="#"> Accessories</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-4">
+                        <img src="IMG/content-last/content-last-4.jpg" alt="">
+                        <div class="gallery-text-4">
+                            <a href="#"> Home</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-5">
+                        <img src="IMG/content-last/content-last-5.jpg" alt="">
+                        <div class="gallery-text-5">
+                            <a href="#"> Toys</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="gallery-row-slider">
+                <div class="gallery-slider">
+                    <div class="gallery-img-1">
+                        <img src="IMG/content-last/content-last-1.jpg" alt="">
+                        <div class="gallery-text-1">
+                            <a href="#"> Blankets</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-2">
+                        <img src="IMG/content-last/content-last-2.jpg" alt="">
+                        <div class="gallery-text-2">
+                            <a href="#"> Nightlight</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-3">
+                        <img src="IMG/content-last/content-last-3.jpg" alt="">
+                        <div class="gallery-text-3">
+                            <a href="#"> Accessories</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-4">
+                        <img src="IMG/content-last/content-last-4.jpg" alt="">
+                        <div class="gallery-text-4">
+                            <a href="#"> Home</a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-5">
+                        <img src="IMG/content-last/content-last-5.jpg" alt="">
+                        <div class="gallery-text-5">
+                            <a href="#"> Toys</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-form">
+                <p class="footer-form-text">Our fabulous newsletters:</p>
+                <form>
+                    <input class="footer-form-input" type="text" id="mail" name="mail" placeholder="Email address">
+                    <input class="footer-form-input-button" type="button" id="signup" value="Sign up">
+                </form>
+            </div>
+            <div class="footer-navigation">
+                <div class="collections">
+                    <p class="collections-text">Collections</p>
+                    <a href="#">Toys</a>
+                    <a href="#">Home</a>
+                    <a href="#">Stationery</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="store-ınfo">
+                    <p class="store-ınfo-text">Store Info</p>
+                    <a href="#">FREE TRIAL</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Search</a>
+                </div>
+                <div class="Legal">
+                    <p class="Legal-text">Legal</p>
+                    <a href="#">Refund</a>
+                    <a href="#">T&Cs</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="follow-us">
+                    <p class="follow-us-text">Follow us</p>
+                    <div class="follow-us-navigation">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end">
+                <div class="footer-end-left">
+                    <small>Copyright © 2022 <a href="#">BOOST - a premium Shopify e-commerce theme. Powered by Shopify</a></small>
+                </div>
+                <div class="footer-end-right">
+                    <div class="footer-localization">
+                        <div class="footer-navbar-form">
+                            <select name="exchance" id="exchance">
+                                <option value="" selected>United States (USD $)</option>
+                                <option value="">Australia (AUD $)</option>
+                                <option value="">Canada (CAD $)</option>
+                                <option value="">United Kingdom (GBP €)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="payment-icon">
+                        <ul>
+                            <li><img src="IMG/payment/apple-pay.png" alt=""></li>
+                            <li><img src="IMG/payment/amex.png" alt=""></li>
+                            <li><img src="IMG/payment/paypal.png" alt=""></li>
+                            <li><img src="IMG/payment/cirrus.png" alt=""></li>
+                            <li><img src="IMG/paymenT/discover.png" alt=""></li>
+                            <li><img src="IMG/payment/google.png" alt=""></li>
+                            <li><img src="IMG/payment/visa.png" alt=""></li>
+                            <li><img src="IMG/payment/union.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
+    <script>
+        $('.slide-show').slick({
+            dots: true,
+            autoplay: true,
+        });
+    </script>
+    <script>
+        $('.gallery-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            dots: true,
+            appenDots: $(this)
+        });
+    </script>
+    </script>
+    <script>
+        $('.quick-buy-slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+        });
+    </script>
+    <script>
+        $('.text-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            autoplay: true,
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

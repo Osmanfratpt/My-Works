@@ -1,0 +1,230 @@
+<script type='text/javascript'>
+  var billto = jQuery('.order_{{order.id}} section.ibcl_bill_to').html();
+  var shipto = jQuery('.order_{{order.id}} section.ibcl_ship_to').html();
+  jQuery('.order_{{order.id}} section.ibcl_ship_to').html(billto);
+  jQuery('.order_{{order.id}} section.ibcl_bill_to').html(shipto);
+
+  {% for line_item in order.line_items %}
+  jQuery('.order_{{order.id}} #items [data-iterate]:eq({{loop.index - 1}}) .ibcl_item_description').html(
+          '<div> {{ line_item.quantity }}</div>'
+  );
+  jQuery('.order_{{order.id}} #items [data-iterate]:eq({{loop.index - 1}}) .ibcl_item_quantity').html(
+          '<div> {{ line_item.title }}-{{line_item.variant_title }}</div>'
+  );
+  {% endfor%}
+
+  {% set tags = order.tags |split(',') %}
+  {% for tag in tags %}
+  {% set tag = tag | spaceless %}
+  {% if tag == 'Store Pickup' %}
+  jQuery('.order_{{order.id}} .ibcl_shipping_company').html('Store Pickup');
+  {% endif %}
+
+  {% set datePart = tag|split('-') %}
+  {% if datePart is iterable and datePart | length == 3%}
+  jQuery('.order_{{order.id}} .ibcl_shipping_company_label').parent().after('<tr data-iterate="item"><th class="ibcl_shipping_company_label">SHIPPING DATE :</th><td class="ibcl_shipping_date">{{ tag }}</td></tr>');
+  {% endif %}
+  {%endfor%}
+
+  {% if order.paid_amount is defined and order.paid_amount>0%}
+  jQuery('.order_{{order.id}} .ibcl_amount_paid').html('$ {{ (order.paid_amount+order.refunded_amount) | number_format(2, '.', ',')}}')
+  {% endif %}
+
+  {% if order.amount_due is defined and order.amount_due>0%}
+  jQuery('.order_{{order.id}} .ibcl_amount_due').html('$ {{ order.amount_due | number_format(2, '.', ',')}}')
+  {% endif %}
+
+  {% if order.refunded_amount is defined and order.refunded_amount <0%}
+  jQuery('.order_{{order.id}} .ibcl_amount_total_paid').html('$ {{ (order.total_price-order.refunded_amount) | number_format(2, '.', ',')}}')
+  {% endif %}
+
+  let noteContent = '{{ order.note | e('js') }}';
+  {% if order.note is not empty %}
+  noteContent += '<br>';
+  {% endif %}
+  {% for note_attribute in order.note_attributes %}
+  {% if note_attribute.name != 'gistToken' %}
+  noteContent += '{{ note_attribute.name | capitalize }} : {{ note_attribute.value }} <br>';
+  {% endif %}
+  {% endfor %}
+  jQuery('.ibcl_order_note').html(noteContent);
+
+</script>
+<style>
+  #items table th:nth-child(1) {
+    width:10% !important;
+    text-align:center !important;
+  }
+
+  #items table th:nth-child(3) {
+    width:10% !important;
+    text-align:center !important;
+  }
+
+  #items table th:nth-child(9){
+    width:80% !important;
+    text-align:center !important;
+  }
+  .ibcl_item_description{
+    text-align:center !important;
+  }
+  .ibcl_item_sku{
+    text-align:center !important;
+  }
+  .ibcl_item_quantity{
+    text-align:center !important;
+  }
+  #sums_table {
+    margin-right: -13px !important;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+    var billto = jQuery('.order_{{order.id}} section.ibcl_bill_to').html();
+    var shipto = jQuery('.order_{{order.id}} section.ibcl_ship_to').html();
+    jQuery('.order_{{order.id}} section.ibcl_ship_to').html(billto);
+    jQuery('.order_{{order.id}} section.ibcl_bill_to').html(shipto);
+
+
+    {% for line_item in order.line_items %}
+
+    jQuery('.order_{{order.id}} #items [data-iterate]:eq({{loop.index - 1}}) .ibcl_item_description').html(
+        '<div> {{ line_item.quantity }}</div>'
+    );
+
+    jQuery('.order_{{order.id}} #items [data-iterate]:eq({{loop.index - 1}}) .ibcl_item_quantity').html(
+        '<div> {{ line_item.title }}-{{line_item.variant_title }}</div>'
+    );
+    {% endfor%}
+
+    {% set tags = order.tags |split(',') %}
+    {% for tag in tags %}
+    {% set tag = tag | spaceless %}
+    {% if tag == 'Store Pickup' %}
+    jQuery('.order_{{order.id}} .ibcl_shipping_company').html('Store Pickup');
+    {% endif %}
+
+    {% set datePart = tag|split('-') %}
+    {% if datePart is iterable and datePart | length == 3%}
+    jQuery('.order_{{order.id}} .ibcl_shipping_company_label').parent().after('<tr data-iterate="item"><th class="ibcl_shipping_company_label">SHIPPING DATE :</th><td class="ibcl_shipping_date">{{ tag }}</td></tr>');
+    {% endif %}
+    {%endfor%}
+
+</script>
+<style>
+    #items table th:nth-child(1) {
+        width:10% !important;
+        text-align:center !important;
+    }
+
+    #items table th:nth-child(3) {
+        width:10% !important;
+        text-align:center !important;
+    }
+
+    #items table th:nth-child(8){
+        width:80% !important;
+        text-align:center !important;
+    }
+    .ibcl_item_description{
+        text-align:center !important;
+    }
+    .ibcl_item_sku{
+        text-align:center !important;
+    }
+    .ibcl_item_quantity{
+        text-align:center !important;
+    }
+    #sums_table {
+        margin-right: -13px !important;
+    }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+    var billto = jQuery('.order_{{order.id}} section.ibcl_bill_to').html();
+    var shipto = jQuery('.order_{{order.id}} section.ibcl_ship_to').html();
+    jQuery('.order_{{order.id}} section.ibcl_ship_to').html(billto);
+    jQuery('.order_{{order.id}} section.ibcl_bill_to').html(shipto);
+
+
+    {% for line_item in order.line_items %}
+
+    jQuery('.order_{{order.id}} #items [data-iterate]:eq({{loop.index - 1}}) .ibcl_item_description').html(
+        '<div> {{ line_item.quantity }}</div>'
+    );
+
+    jQuery('.order_{{order.id}} #items [data-iterate]:eq({{loop.index - 1}}) .ibcl_item_quantity').html(
+        '<div> {{ line_item.title }}-{{line_item.variant_title }}</div>'
+    );
+    {% endfor%}
+
+    {% set tags = order.tags |split(',') %}
+    {% for tag in tags %}
+    {% set tag = tag | spaceless %}
+    {% if tag == 'Store Pickup' %}
+    jQuery('.order_{{order.id}} .ibcl_shipping_company').html('Store Pickup');
+    {% endif %}
+
+    {% set datePart = tag|split('-') %}
+    {% if datePart is iterable and datePart | length == 3%}
+    jQuery('.order_{{order.id}} .ibcl_shipping_company_label').parent().after('<tr data-iterate="item"><th class="ibcl_shipping_company_label">SHIPPING DATE :</th><td class="ibcl_shipping_date">{{ tag }}</td></tr>');
+    {% endif %}
+    {%endfor%}
+
+</script>
+<style>
+    #items table th:nth-child(1) {
+        width:10% !important;
+        text-align:center !important;
+    }
+
+    #items table th:nth-child(3) {
+        width:10% !important;
+        text-align:center !important;
+    }
+
+    #items table th:nth-child(8){
+        width:80% !important;
+        text-align:center !important;
+    }
+    .ibcl_item_description{
+        text-align:center !important;
+    }
+    .ibcl_item_sku{
+        text-align:center !important;
+    }
+    .ibcl_item_quantity{
+        text-align:center !important;
+    }
+    #sums_table {
+        margin-right: -13px !important;
+    }
+
+    #items table th:nth-child(3) {
+        width: 20%;
+    }
+
+    #items table th:nth-child(9) {
+        width: 13%;
+    }
+</style>

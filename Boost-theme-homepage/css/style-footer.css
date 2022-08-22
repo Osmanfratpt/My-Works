@@ -1,0 +1,305 @@
+@charset "UTF-8";
+.footer {
+  background-color: #00848e;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.footer-form {
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-right: 20px;
+}
+
+.footer-form form {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.footer-form ::-webkit-input-placeholder {
+  color: white;
+}
+
+.footer-form :-ms-input-placeholder {
+  color: white;
+}
+
+.footer-form ::-ms-input-placeholder {
+  color: white;
+}
+
+.footer-form ::placeholder {
+  color: white;
+}
+
+.footer-form-text {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-form-input {
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+}
+
+.footer-form-input-button {
+  background-color: #fff;
+  padding: 10px 40px;
+  border-radius: 30px;
+  border-color: #fff;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.collections-text {
+  padding-bottom: 15px;
+}
+
+.collections a {
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.store-ınfo-text {
+  padding-bottom: 15px;
+}
+
+.store-ınfo a {
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.Legal-text {
+  padding-bottom: 15px;
+}
+
+.Legal a {
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.follow-us-text {
+  padding-bottom: 15px;
+}
+
+.follow-us a i {
+  color: #fff;
+  font-size: 25px;
+  padding: 0 2px;
+}
+
+.footer-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 90px !important;
+  margin: 0 30px;
+}
+
+.footer-end .footer-end-left {
+  font-size: 12px;
+}
+
+.footer-end .footer-end-left a {
+  color: #fff;
+}
+
+.footer-end .footer-localization {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.footer-end .footer-localization .footer-navbar-form {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 5px 0 5px 10px;
+  background-color: transparent;
+  margin-left: 120px;
+  position: relative;
+}
+
+.footer-end .footer-localization .footer-navbar-form select {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+.footer-end .footer-localization .footer-navbar-form select::after {
+  top: 20px;
+  position: absolute;
+}
+
+.footer-end .footer-localization .footer-navbar-form select option {
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
+.footer-end .payment-icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-end .payment-icon ul li {
+  padding-right: 10px;
+}
+
+.footer-end .payment-icon ul :nth-last-child(1) {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .footer .footer-form form {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .footer .footer-form ::-webkit-input-placeholder {
+    color: white;
+  }
+  .footer .footer-form :-ms-input-placeholder {
+    color: white;
+  }
+  .footer .footer-form ::-ms-input-placeholder {
+    color: white;
+  }
+  .footer .footer-form ::placeholder {
+    color: white;
+  }
+  .footer .footer-navigation {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collections {
+    border-bottom: 1px solid #ffffff81;
+    padding-bottom: 20px;
+  }
+  .collections-text {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+  .store-ınfo {
+    border-bottom: 1px solid #ffffff81;
+    padding-bottom: 20px;
+  }
+  .store-ınfo-text {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+  .Legal {
+    border-bottom: 1px solid #ffffff81;
+    padding-bottom: 20px;
+  }
+  .Legal-text {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .follow-us {
+    padding-top: 20px;
+  }
+  .follow-us-text {
+    display: none;
+  }
+  .footer-form {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .footer-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0 !important;
+    border: none;
+    width: 100% !important;
+  }
+  .footer-form form .footer-form-input {
+    border-bottom: 1px solid #ffffff81 !important;
+    padding-bottom: 20px;
+    margin: 20px 0;
+  }
+  .footer-form form .footer-form-input::-webkit-input-placeholder {
+    color: #ffffff81;
+  }
+  .footer-form form .footer-form-input:-ms-input-placeholder {
+    color: #ffffff81;
+  }
+  .footer-form form .footer-form-input::-ms-input-placeholder {
+    color: #ffffff81;
+  }
+  .footer-form form .footer-form-input::placeholder {
+    color: #ffffff81;
+  }
+  .footer-form form .footer-form-input-button {
+    width: 130px;
+    margin-bottom: 0;
+  }
+  .footer-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer-end .footer-end-right {
+    margin-bottom: 30px;
+  }
+  .footer-localization {
+    text-align: left !important;
+  }
+  .footer-localization .footer-navbar-form {
+    margin-left: 0 !important;
+    width: 65%;
+  }
+}
+/*# sourceMappingURL=style-footer.css.map */

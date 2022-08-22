@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cart page - Dawn</title>
+</head>
+<body>
+    <header id="header">
+        <div class="d-md-none">
+            <div class="header-top-text">
+                <p>Free shipping available on all orders!</p>
+            </div>
+        </div>
+        <div class="header-inner">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <nav class="navbar navbar-light d-md-none">
+                        <div>
+                            <button class="navbar-toggler ps-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                        <a href="/">
+                                            <img src="assets/img/dawn-logo.png" alt="">
+                                        </a>
+                                    </h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Bags
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shoes</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="header-left">
+                        <div class="header-logo">
+                            <a href="/">
+                                <img src="assets/img/dawn-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="d-none d-md-block header-menu">
+                            <ul>
+                                <li class="menu-item">
+                                    <a class="has-dropdown" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Bags
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-border" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Shop all</a></li>
+                                        <li><a class="dropdown-item" href="#">Tote bags</a></li>
+                                        <li><a class="dropdown-item" href="#">Shoulder bags</a></li>
+                                        <li><a class="dropdown-item" href="#">Crossbody bags</a></li>
+                                        <li><a class="dropdown-item" href="#">Top handle bags</a></li>
+                                        <li><a class="dropdown-item" href="#">Mini bags</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="has-dropdown" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Shoes
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-border" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Shop all</a></li>
+                                        <li><a class="dropdown-item" href="#">Sandals</a></li>
+                                        <li><a class="dropdown-item" href="#">Boots</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/">Lookbook</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-search">
+                            <a href="javascript:void(0);" onclick="showSearch();" class="header-search-button"></a>
+                            <div class="search-container justify-content-center align-items-center">
+                                <div class="custom-input input-size-search">
+                                    <div>
+                                        <input type="text" placeholder="Search" class="input-search">
+                                        <button type="submit" class="custom-input-search"></button>
+                                    </div>
+                                </div>
+                                <div class="close-custom-input" onclick="hideSearch();"></div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block header-user"><a href="/dawn/Login.html"></a></div>
+                        <nav class="navbar-light">
+                            <div>
+                                <button class="navbar-toggler p-md-0 pt-0 ps-4 pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#header-cart" aria-controls="header-cart-label">
+                                    <a href="#" class="header-right-card-icon navbar-brand" onclick="showCard()">
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="header-cart" aria-labelledby="header-cart-label">
+                                    <div class="offcanvas-body">
+                                        <div class="card-close" data-bs-dismiss="offcanvas"></div>
+                                        <div class="card-menu-content">
+                                            <div class="card-items-check">
+                                                <p>Item added to your cart</p>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between h-100">
+                                                <div class="card-items-section">
+                                                    <div class="card-item">
+                                                        <div class="dropdown-item p-0" href="#">
+                                                            <a href="/">
+                                                                <img src="assets/img/cartpage-brick.png" alt="">
+                                                            </a>
+                                                            <div class="card-item-content">
+                                                                <div class="card-item-name">
+                                                                    <p>Brick</p>
+                                                                    <p>Color: Cashmere Rose</p>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="card-quantity">
+                                                                            <div class="decrease"></div>
+                                                                            <input type="text" value="1" min="1" max="100">
+                                                                            <div class="increase"></div>
+                                                                        </div>
+                                                                        <div class="quantity-delete"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-item-price">180$</div>
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                                <div class="card-items-buttons">
+                                                    <a href="#"><button class="view-card-button">View my cart (3)</button></a>
+                                                    <a href="#"><button class="card-check-button">Check out</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+<main>
+    <div class="container">
+        <div class="card-page-items">
+            <div class="card-page-item-top">
+                <div class="page-title">Your cart</div>
+                <div> <a href="/">Continue shopping</a></div>
+            </div>
+            <div class="card-page-item-middle">
+                <div class="card-page-item-subtitle">
+                    <div class="row">
+                        <div class="col theme-mb-3">PRODUCT</div>
+                        <div class="col text-end">TOTAL</div>
+                    </div>
+                </div>
+                <div class="card-page-item">
+                    <div class="row">
+                        <div class="col-3 col-md">
+                            <div class="card-page-item-image">
+                                <a href="/">
+                                    <img src="assets/img/cartpage-naomi-mini-wallet.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <div class="d-md-flex justify-content-between">
+                                <div class="card-page-item-name">
+                                    <p>Naomi Mini Wallet</p>
+                                    <p>Color: Cotton Candy</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-quantity card-page-quantity">
+                                        <div class="decrease"></div>
+                                        <input type="text" value="1" min="1" max="100">
+                                        <div class="increase"></div>
+                                    </div>
+                                    <div class="quantity-delete"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-md-center align-self-lg-auto">
+                            <div class="card-page-item-price">187$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-page-item">
+                    <div class="row">
+                        <div class="col-3 col-md">
+                            <div class="card-page-item-image">
+                                <a href="/">
+                                    <img src="assets/img/cartpage-brick.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <div class="d-md-flex justify-content-between">
+                                <div class="card-page-item-name">
+                                    <p>Brick</p>
+                                    <p>Color: Cashmere Rose</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-quantity card-page-quantity">
+                                        <div class="decrease"></div>
+                                        <input type="text" value="1" min="1" max="100">
+                                        <div class="increase"></div>
+                                    </div>
+                                    <div class="quantity-delete"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-md-center align-self-lg-auto">
+                            <div class="card-page-item-price">187$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-page-item">
+                    <div class="row">
+                        <div class="col-3 col-md">
+                            <div class="card-page-item-image">
+                                <a href="/">
+                                    <img src="assets/img/cartpage-businessbag.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <div class="d-md-flex justify-content-between">
+                                <div class="card-page-item-name">
+                                    <p>Business Bag</p>
+                                    <p>Color: Black and Grey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-quantity card-page-quantity">
+                                        <div class="decrease"></div>
+                                        <input type="text" value="1" min="1" max="100">
+                                        <div class="increase"></div>
+                                    </div>
+                                    <div class="quantity-delete"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-md-center align-self-lg-auto">
+                            <div class="card-page-item-price">187$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-page-item-bottom">
+                <div class="card-page-subtotal">Subtotal  $561.00 CAD</div>
+                <div class="card-page-bottom-text">Taxes and shipping calculated at checkout</div>
+                <div class="card-items-buttons card-page-button">
+                    <a href="#" class="m-0"><button class="card-check-button">Check out</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="similar-items">
+            <div class="products main-padding">
+                <div class="section-subtitle">You may also like</div>
+                <div class="container">
+                    <div class="showcase-products">
+                        <div>
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-1.png" alt="image1">
+                                            </div>
+                                            <div class="item-title">Hobo Small</div>
+                                            <span class="item-price">$195.00 CAD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-2.png" alt="image1">
+                                            </div>
+                                            <div class="item-title">Bo Soft Strap</div>
+                                            <span class="item-price text-shadow">$365.00 CAD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-3.png" alt="image1">
+                                            </div>
+                                            <div class="item-title">Hobo Large</div>
+                                            <span class="item-price">$615.00 CAD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-4.png" alt="image1">
+                                                <span class="sale-icon">Sale</span>
+                                            </div>
+                                            <div class="item-title">Storml</div>
+                                            <div class="price-section d-block d-lg-flex">
+                                                <div class="item-price sale-text theme-mr-2">$545.00 CAD</div>
+                                                <div class="item-price">$195.CAD</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-5.png" alt="image1">
+                                            </div>
+                                            <div class="item-title">Hobo Small</div>
+                                            <span class="item-price">$195.00 CAD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-6.png" alt="image1">
+                                                <span class="sale-icon">Sale</span>
+                                            </div>
+                                            <div class="item-title body-text-2">Storml</div>
+                                            <div class="price-section d-block d-lg-flex">
+                                                <div class="item-price sale-text theme-mr-2">$545.00 CAD</div>
+                                                <div class="item-price">$195.00 CAD</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-7.png" alt="image1">
+                                            </div>
+                                            <div class="item-title">Bo Soft Strap</div>
+                                            <span class="item-price">$365.00 CAD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="showcase-item">
+                                        <a href="/">
+                                            <div class="showcase-item-image">
+                                                <img src="assets/img/showcase-image-8.png" alt="image1">
+                                            </div>
+                                            <div class="item-title">Hobo Large</div>
+                                            <span class="item-price">$615.00 CAD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="similar-items-button d-none d-md-flex">
+                <div class="card-items-buttons">
+                    <a href="#" class="m-0"><button class="card-check-button">View all</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-mb">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-footer-mobile">
+                        <div class="footer-top-subtitle">Quick links</div>
+                        <div class="footer-top-menu">
+                            <ul>
+                                <li>
+                                    <a href="/">Bags</a>
+                                </li>
+                                <li>
+                                    <a href="/">Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="/">Lookbook</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-footer-mobile">
+                        <div class="footer-top-subtitle">Info</div>
+                        <div class="footer-top-menu">
+                            <ul>
+                                <li>
+                                    <a href="/">About</a>
+                                </li>
+                                <li>
+                                    <a href="/">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="/">Shipping policy</a>
+                                </li>
+                                <li>
+                                    <a href="/">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer-top-subtitle">Our mission</div>
+                        <p class="footer-top-text">Quality materials, good designs, craftsmanship and sustainability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <div class="newsletter">
+                        <form class="newsletter-inner">
+                            <label for="exampleInputEmail1" class="form-label heading-3 newsletter-mb-mobile">Subscribe to our emails</label>
+                            <div class="custom-input input-size-email">
+                                <input type="email" maxlength="80" class="form-control input-email newsletter-mb-mobile" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                <button type="submit" class="custom-input-arrow-r"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="footer-social">
+                        <a href="/" class="social-twitter"></a>
+                        <a href="/" class="social-facebook"></a>
+                        <a href="/" class="social-instagram"></a>
+                        <a href="/" class="social-tiktok"></a>
+                        <a href="/" class="social-youtube me-0"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <div class="theme-mr-2">
+                            <div class="select-form-title theme-mb-2">Country/region</div>
+                            <select class="body-text-caption select-form">
+                                <option selected>Canada (CAD $)</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="select-form-title theme-mb-2">Language</div>
+                            <select class="body-text-caption select-form">
+                                <option selected>English</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="footer-payment-methods">
+                        <div>
+                            <div class="theme-mb-1">
+                                <img src="assets/img/icons/payment%20methods.png" alt="">
+                            </div>
+                            <div class="copyright">© 2021, dawn-theme-default Powered by Shopify</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    const self = this;
+    document.body.addEventListener("click", function (event) {
+        if (document.body.classList.contains("search-active") && event.target.className !== "header-search-button") {
+            if(!event.target.closest(".search-container")) {
+                self.hideSearch();
+            }
+        }
+    });
+
+    function showSearch() {
+        if(document.body.classList.contains("search-active")) {
+            document.body.classList.remove("search-active");
+        } else {
+            document.body.classList.add("search-active");
+        }
+        console.log('qwe');
+    }
+    function  hideSearch() {
+        document.body.classList.remove("search-active");
+        console.log('hey');
+    }
+    function showCard() {
+        if(document.body.classList.contains("card-active")) {
+            document.body.classList.remove("card-active");
+        } else {
+            document.body.classList.add("card-active");
+        }
+
+    }
+</script>
+<script src="assets/js/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
