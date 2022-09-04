@@ -1,0 +1,411 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #F1E3D3;
+}
+
+.glass {
+  width: 9rem;
+  height: 20rem;
+  border: 0.35rem solid #000;
+  border-radius: 0 0 10% 10%;
+  padding: 15px;
+  position: relative;
+  background-color: #c2c0bf;
+}
+
+.drink {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1978D7), to(#FF3525));
+  background: linear-gradient(#1978D7, #FF3525);
+  border-radius: 0 0 10% 10%;
+}
+
+.straw {
+  width: 9px;
+  height: 48px;
+  background: red;
+  position: absolute;
+  top: -3.25rem;
+  right: 3rem;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  border-radius: 5px 0 10px 10px;
+}
+
+.straw:before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 9px;
+  height: 3rem;
+  top: -2.65rem;
+  left: 0.725rem;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.straw:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 9px;
+  height: 5.5rem;
+  top: -2.3rem;
+  left: -1rem;
+  border-radius: 0 0 15px 15px;
+}
+
+.ice-cubes {
+  margin: 0 8px;
+  position: relative;
+  width: 140px;
+  height: 500px;
+}
+
+.ice-cubes .ice {
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  opacity: 50%;
+  border-radius: 30%;
+  margin-top: 20px;
+  margin-left: -2px;
+  position: absolute;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.ice-cubes:hover .ice {
+  -webkit-animation: shake 5s;
+          animation: shake 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-top: 160px;
+  -webkit-transition: all 3.5s;
+  transition: all 3.5s;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -1px) rotate(-5deg);
+            transform: translate(-1px, -1px) rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: translate(-1px, 0px) rotate(5deg);
+            transform: translate(-1px, 0px) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(5deg);
+            transform: translate(1px, -1px) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-5deg);
+            transform: translate(-1px, 2px) rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: translate(-1px, 1px) rotate(5deg);
+            transform: translate(-1px, 1px) rotate(5deg);
+  }
+  70% {
+    -webkit-transform: translate(1px, 1px) rotate(-5deg);
+            transform: translate(1px, 1px) rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(5deg);
+            transform: translate(-1px, -1px) rotate(5deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -1px) rotate(-5deg);
+            transform: translate(1px, -1px) rotate(-5deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -1px) rotate(-5deg);
+            transform: translate(-1px, -1px) rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: translate(-1px, 0px) rotate(5deg);
+            transform: translate(-1px, 0px) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(5deg);
+            transform: translate(1px, -1px) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-5deg);
+            transform: translate(-1px, 2px) rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: translate(-1px, 1px) rotate(5deg);
+            transform: translate(-1px, 1px) rotate(5deg);
+  }
+  70% {
+    -webkit-transform: translate(1px, 1px) rotate(-5deg);
+            transform: translate(1px, 1px) rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(5deg);
+            transform: translate(-1px, -1px) rotate(5deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -1px) rotate(-5deg);
+            transform: translate(1px, -1px) rotate(-5deg);
+  }
+}
+
+.ice-cubes .ice-2 {
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  opacity: 50%;
+  border-radius: 30%;
+  margin-top: 50px;
+  margin-left: 65px;
+  position: absolute;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.ice-cubes:hover .ice-2 {
+  -webkit-animation: shake 5s;
+          animation: shake 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-top: 180px;
+  -webkit-transition: all 3.5s;
+  transition: all 3.5s;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -1px) rotate(-5deg);
+            transform: translate(-1px, -1px) rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: translate(-1px, 0px) rotate(5deg);
+            transform: translate(-1px, 0px) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(5deg);
+            transform: translate(1px, -1px) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-5deg);
+            transform: translate(-1px, 2px) rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: translate(-1px, 1px) rotate(5deg);
+            transform: translate(-1px, 1px) rotate(5deg);
+  }
+  70% {
+    -webkit-transform: translate(1px, 1px) rotate(-5deg);
+            transform: translate(1px, 1px) rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(5deg);
+            transform: translate(-1px, -1px) rotate(5deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -1px) rotate(-5deg);
+            transform: translate(1px, -1px) rotate(-5deg);
+  }
+}
+
+.ice-cubes .ice-3 {
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  opacity: 50%;
+  border-radius: 30%;
+  margin-top: 110px;
+  margin-left: 7px;
+  position: absolute;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.ice-cubes:hover .ice-3 {
+  -webkit-animation: shake 5s;
+          animation: shake 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-top: 230px;
+  -webkit-transition: all 3.5s;
+  transition: all 3.5s;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -1px) rotate(-5deg);
+            transform: translate(-1px, -1px) rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: translate(-1px, 0px) rotate(5deg);
+            transform: translate(-1px, 0px) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(5deg);
+            transform: translate(1px, -1px) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-5deg);
+            transform: translate(-1px, 2px) rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: translate(-1px, 1px) rotate(5deg);
+            transform: translate(-1px, 1px) rotate(5deg);
+  }
+  70% {
+    -webkit-transform: translate(1px, 1px) rotate(-5deg);
+            transform: translate(1px, 1px) rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(5deg);
+            transform: translate(-1px, -1px) rotate(5deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -1px) rotate(-5deg);
+            transform: translate(1px, -1px) rotate(-5deg);
+  }
+}
+
+.ice-cubes .ice-4 {
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+  opacity: 50%;
+  border-radius: 30%;
+  margin-top: 120px;
+  margin-left: 80px;
+  position: absolute;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.ice-cubes:hover .ice-4 {
+  -webkit-animation: shake 5s;
+          animation: shake 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-top: 250px;
+  -webkit-transition: all 3.5s;
+  transition: all 3.5s;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -1px) rotate(-5deg);
+            transform: translate(-1px, -1px) rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: translate(-1px, 0px) rotate(5deg);
+            transform: translate(-1px, 0px) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(5deg);
+            transform: translate(1px, -1px) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-5deg);
+            transform: translate(-1px, 2px) rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: translate(-1px, 1px) rotate(5deg);
+            transform: translate(-1px, 1px) rotate(5deg);
+  }
+  70% {
+    -webkit-transform: translate(1px, 1px) rotate(-5deg);
+            transform: translate(1px, 1px) rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(5deg);
+            transform: translate(-1px, -1px) rotate(5deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 1px) rotate(5deg);
+            transform: translate(1px, 1px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -1px) rotate(-5deg);
+            transform: translate(1px, -1px) rotate(-5deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
