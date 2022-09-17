@@ -1,0 +1,103 @@
+body {
+  background-color: #9d6ff1;
+  max-width: 1400px;
+  cursor: url(/img/worm-svgrepo-com.svg), auto;
+}
+
+.aquarium {
+  position: relative;
+  height: 500px;
+}
+
+.aquarium-top {
+  background-color: #6fc1f1;
+  width: 250px;
+  height: 45px;
+  position: absolute;
+  bottom: 75%;
+  left: 38.2%;
+  border-radius: 10px;
+}
+
+.aquarium-mid {
+  background-color: #6fc1f1;
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+  border-radius: 300px 300px 0 0;
+  overflow: hidden;
+}
+
+.wave {
+  background: url(/img/waves.svg) repeat-x;
+  position: absolute;
+  bottom: 0;
+  width: 5000px;
+  height: 40px;
+  -webkit-animation: wave 40s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 40s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -4500px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -4500px;
+  }
+}
+@-webkit-keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+.aquarium-bottom {
+  background-color: #0099ff;
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  border-radius: 0 0 250px 250px;
+  box-shadow: 2px 15px 0 0 rgba(58, 57, 57, 0.144);
+}
+
+.fish-tank {
+  position: relative;
+  bottom: -30%;
+  left: 34%;
+  width: 350px;
+  height: 300px;
+}
+.fish-tank .fish {
+  background-image: url(/img/fish-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+}/*# sourceMappingURL=style.css.map */

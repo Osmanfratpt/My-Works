@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>AQUARIUM
+  </title>
+</head>
+
+<body>
+  <div class="aquarium">
+    <div class="aquarium-top">
+
+    </div>
+    <div class="aquarium-mid">
+      <div class="wave">
+      </div>
+    </div>
+    <div class="aquarium-bottom">
+
+    </div>
+    <div class="fish-tank">
+      <div class="fish">
+
+      </div>
+    </div>
+  </div>
+  <script>
+    var fish = document.getElementsByClassName("fish");
+    document.onmousemove = function () {
+      var x = event.clientX * 100 / window.innerWidth + "%";
+      var y = event.clientY * 100 / window.innerHeight + "%";
+      //event.clientX => get the horizontal coordinate of the mouse
+      //event.clientY => get the Vertical coordinate of the mouse
+      //window.innerWidth => get the browser width
+      //window.innerHeight => get the browser height
+
+      for (var i = 0; i < 2; i++) {
+        fish[i].style.left = x;
+        fish[i].style.top = y;
+        fish[i].style.transform = "translate(-" + x + ",-" + y + ")";
+      }
+    }
+  </script>
+</body>
+
+</html>
