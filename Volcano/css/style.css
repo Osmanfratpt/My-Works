@@ -1,0 +1,1100 @@
+body {
+  background-color: #6d99e4;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.volcano {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.volcano .volcan {
+  position: absolute;
+  top: 135px;
+  left: 35%;
+  width: 350px;
+  height: 350px;
+}
+.volcano .volcan .shake-volcan {
+  width: 350px;
+  height: 350px;
+  background-image: url(/img/eruption-volcano-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3 !important;
+}
+.volcano .volcan .shake-volcan:hover {
+  -webkit-animation: shake 5s;
+          animation: shake 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  30% {
+    transform: rotate(-2deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  30% {
+    transform: rotate(-2deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+.volcano .volcan .icons {
+  position: relative;
+  top: -5%;
+  left: 43%;
+  z-index: 1 !important;
+}
+.volcano .volcan .icons .html {
+  position: absolute;
+  bottom: 0;
+  height: 500px;
+}
+.volcano .volcan .icons .html .html-img {
+  margin-top: 445px;
+}
+.volcano .volcan .icons .html .html-img img {
+  width: 50px;
+}
+.volcano .volcan .icons .css {
+  position: absolute;
+  bottom: 0;
+  height: 500px;
+}
+.volcano .volcan .icons .css .css-img {
+  margin-top: 445px;
+}
+.volcano .volcan .icons .css .css-img img {
+  width: 50px;
+}
+.volcano .volcan .icons .scss {
+  position: absolute;
+  bottom: 0;
+  height: 500px;
+}
+.volcano .volcan .icons .scss .scss-img {
+  margin-top: 445px;
+}
+.volcano .volcan .icons .scss .scss-img img {
+  width: 50px;
+}
+.volcano .volcan .icons .javascript {
+  position: absolute;
+  bottom: 0;
+  height: 500px;
+}
+.volcano .volcan .icons .javascript .javascript-img {
+  margin-top: 445px;
+}
+.volcano .volcan .icons .javascript .javascript-img img {
+  width: 50px;
+}
+.volcano .volcan .icons .react {
+  position: absolute;
+  bottom: 0;
+  height: 500px;
+}
+.volcano .volcan .icons .react .react-img {
+  margin-top: 445px;
+}
+.volcano .volcan .icons .react .react-img img {
+  width: 50px;
+}
+.volcano .volcan .icons .moov {
+  transition: all 10s;
+}
+.volcano .volcan:hover .css {
+  -webkit-animation: shimmy 15s;
+          animation: shimmy 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes shimmy {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(0, -200px);
+    rotate: -5deg;
+  }
+  35% {
+    transform: translate(-50px, -250px);
+    rotate: 5deg;
+  }
+  40% {
+    transform: translate(-75px, -300px);
+    rotate: -5deg;
+  }
+  45% {
+    transform: translate(-100px, -310px);
+    rotate: 5deg;
+  }
+  50% {
+    transform: translate(-125px, -300px);
+    rotate: -3deg;
+  }
+  55% {
+    transform: translate(-150px, -325px);
+    rotate: 3deg;
+  }
+  60% {
+    transform: translate(-175px, -350px);
+    rotate: -3deg;
+  }
+  65% {
+    transform: translate(-200px, -325px);
+    rotate: 2deg;
+  }
+  70% {
+    transform: translate(-225px, -300px);
+    rotate: -2deg;
+  }
+  75% {
+    transform: translate(-250px, -275px);
+    rotate: 2deg;
+  }
+  80% {
+    transform: translate(-275px, -250px);
+    rotate: -2deg;
+  }
+  85% {
+    transform: translate(-290px, -200px);
+    rotate: 2deg;
+  }
+  90% {
+    transform: translate(-300px, -150px);
+    rotate: -2deg;
+  }
+  95% {
+    transform: translate(-325px, -50px);
+    rotate: 2deg;
+  }
+  100% {
+    transform: translate(-350px, 12px);
+  }
+}
+@keyframes shimmy {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(0, -200px);
+    rotate: -5deg;
+  }
+  35% {
+    transform: translate(-50px, -250px);
+    rotate: 5deg;
+  }
+  40% {
+    transform: translate(-75px, -300px);
+    rotate: -5deg;
+  }
+  45% {
+    transform: translate(-100px, -310px);
+    rotate: 5deg;
+  }
+  50% {
+    transform: translate(-125px, -300px);
+    rotate: -3deg;
+  }
+  55% {
+    transform: translate(-150px, -325px);
+    rotate: 3deg;
+  }
+  60% {
+    transform: translate(-175px, -350px);
+    rotate: -3deg;
+  }
+  65% {
+    transform: translate(-200px, -325px);
+    rotate: 2deg;
+  }
+  70% {
+    transform: translate(-225px, -300px);
+    rotate: -2deg;
+  }
+  75% {
+    transform: translate(-250px, -275px);
+    rotate: 2deg;
+  }
+  80% {
+    transform: translate(-275px, -250px);
+    rotate: -2deg;
+  }
+  85% {
+    transform: translate(-290px, -200px);
+    rotate: 2deg;
+  }
+  90% {
+    transform: translate(-300px, -150px);
+    rotate: -2deg;
+  }
+  95% {
+    transform: translate(-325px, -50px);
+    rotate: 2deg;
+  }
+  100% {
+    transform: translate(-350px, 12px);
+  }
+}
+.volcano .volcan:hover .javascript {
+  -webkit-animation: shimmy-1 15s;
+          animation: shimmy-1 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes shimmy-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(0, -200px);
+    rotate: -5deg;
+  }
+  35% {
+    transform: translate(25px, -250px);
+    rotate: 5deg;
+  }
+  40% {
+    transform: translate(50px, -300px);
+    rotate: -5deg;
+  }
+  45% {
+    transform: translate(75px, -310px);
+    rotate: 5deg;
+  }
+  50% {
+    transform: translate(100px, -300px);
+    rotate: -5deg;
+  }
+  55% {
+    transform: translate(125px, -325px);
+    rotate: 5deg;
+  }
+  60% {
+    transform: translate(150px, -350px);
+    rotate: -5deg;
+  }
+  65% {
+    transform: translate(175px, -325px);
+    rotate: 3deg;
+  }
+  70% {
+    transform: translate(200px, -300px);
+    rotate: -3deg;
+  }
+  75% {
+    transform: translate(225px, -275px);
+    rotate: 3deg;
+  }
+  80% {
+    transform: translate(250px, -250px);
+    rotate: -2deg;
+  }
+  85% {
+    transform: translate(275px, -200px);
+    rotate: 2deg;
+  }
+  90% {
+    transform: translate(300px, -150px);
+    rotate: -2deg;
+  }
+  95% {
+    transform: translate(325px, -50px);
+    rotate: 2deg;
+  }
+  100% {
+    transform: translate(350px, 12px);
+  }
+}
+@keyframes shimmy-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(0, -200px);
+    rotate: -5deg;
+  }
+  35% {
+    transform: translate(25px, -250px);
+    rotate: 5deg;
+  }
+  40% {
+    transform: translate(50px, -300px);
+    rotate: -5deg;
+  }
+  45% {
+    transform: translate(75px, -310px);
+    rotate: 5deg;
+  }
+  50% {
+    transform: translate(100px, -300px);
+    rotate: -5deg;
+  }
+  55% {
+    transform: translate(125px, -325px);
+    rotate: 5deg;
+  }
+  60% {
+    transform: translate(150px, -350px);
+    rotate: -5deg;
+  }
+  65% {
+    transform: translate(175px, -325px);
+    rotate: 3deg;
+  }
+  70% {
+    transform: translate(200px, -300px);
+    rotate: -3deg;
+  }
+  75% {
+    transform: translate(225px, -275px);
+    rotate: 3deg;
+  }
+  80% {
+    transform: translate(250px, -250px);
+    rotate: -2deg;
+  }
+  85% {
+    transform: translate(275px, -200px);
+    rotate: 2deg;
+  }
+  90% {
+    transform: translate(300px, -150px);
+    rotate: -2deg;
+  }
+  95% {
+    transform: translate(325px, -50px);
+    rotate: 2deg;
+  }
+  100% {
+    transform: translate(350px, 12px);
+  }
+}
+.volcano .volcan:hover .scss {
+  -webkit-animation: shimmy-2 15s;
+          animation: shimmy-2 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes shimmy-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(0, -200px);
+    rotate: 5deg;
+  }
+  35% {
+    transform: translate(-15px, -250px);
+    rotate: -5deg;
+  }
+  40% {
+    transform: translate(-30px, -300px);
+    rotate: 5deg;
+  }
+  45% {
+    transform: translate(-50px, -310px);
+    rotate: -5deg;
+  }
+  50% {
+    transform: translate(-75px, -300px);
+    rotate: 3deg;
+  }
+  55% {
+    transform: translate(-100px, -325px);
+    rotate: -3deg;
+  }
+  60% {
+    transform: translate(-125px, -350px);
+    rotate: 3deg;
+  }
+  65% {
+    transform: translate(-150px, -325px);
+    rotate: -3deg;
+  }
+  70% {
+    transform: translate(-175px, -300px);
+    rotate: 3deg;
+  }
+  75% {
+    transform: translate(-200px, -275px);
+    rotate: -3deg;
+  }
+  80% {
+    transform: translate(-250px, -250px);
+    rotate: 3deg;
+  }
+  85% {
+    transform: translate(-250px, -175px);
+    rotate: -2deg;
+  }
+  90% {
+    transform: translate(-275px, -120px);
+    rotate: 2deg;
+  }
+  95% {
+    transform: translate(-250px, -50px);
+    rotate: -2deg;
+  }
+  100% {
+    transform: translate(-275px, 12px);
+  }
+}
+@keyframes shimmy-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(0, -200px);
+    rotate: 5deg;
+  }
+  35% {
+    transform: translate(-15px, -250px);
+    rotate: -5deg;
+  }
+  40% {
+    transform: translate(-30px, -300px);
+    rotate: 5deg;
+  }
+  45% {
+    transform: translate(-50px, -310px);
+    rotate: -5deg;
+  }
+  50% {
+    transform: translate(-75px, -300px);
+    rotate: 3deg;
+  }
+  55% {
+    transform: translate(-100px, -325px);
+    rotate: -3deg;
+  }
+  60% {
+    transform: translate(-125px, -350px);
+    rotate: 3deg;
+  }
+  65% {
+    transform: translate(-150px, -325px);
+    rotate: -3deg;
+  }
+  70% {
+    transform: translate(-175px, -300px);
+    rotate: 3deg;
+  }
+  75% {
+    transform: translate(-200px, -275px);
+    rotate: -3deg;
+  }
+  80% {
+    transform: translate(-250px, -250px);
+    rotate: 3deg;
+  }
+  85% {
+    transform: translate(-250px, -175px);
+    rotate: -2deg;
+  }
+  90% {
+    transform: translate(-275px, -120px);
+    rotate: 2deg;
+  }
+  95% {
+    transform: translate(-250px, -50px);
+    rotate: -2deg;
+  }
+  100% {
+    transform: translate(-275px, 12px);
+  }
+}
+.volcano .volcan:hover .react {
+  -webkit-animation: shimmy-3 15s;
+          animation: shimmy-3 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes shimmy-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(10px, -200px);
+    rotate: 5deg;
+  }
+  35% {
+    transform: translate(35px, -250px);
+    rotate: -5deg;
+  }
+  40% {
+    transform: translate(65px, -300px);
+    rotate: 5deg;
+  }
+  45% {
+    transform: translate(95px, -310px);
+    rotate: -5deg;
+  }
+  50% {
+    transform: translate(135px, -300px);
+    rotate: 5deg;
+  }
+  55% {
+    transform: translate(175px, -325px);
+    rotate: -5deg;
+  }
+  60% {
+    transform: translate(225px, -350px);
+    rotate: 5deg;
+  }
+  65% {
+    transform: translate(250px, -325px);
+    rotate: -5deg;
+  }
+  70% {
+    transform: translate(275px, -300px);
+    rotate: 5deg;
+  }
+  75% {
+    transform: translate(300px, -275px);
+    rotate: -3deg;
+  }
+  80% {
+    transform: translate(325px, -250px);
+    rotate: 3deg;
+  }
+  85% {
+    transform: translate(355px, -200px);
+    rotate: -2deg;
+  }
+  90% {
+    transform: translate(375px, -150px);
+    rotate: 2deg;
+  }
+  95% {
+    transform: translate(410px, -50px);
+    rotate: -2deg;
+  }
+  100% {
+    transform: translate(430px, 12px);
+  }
+}
+@keyframes shimmy-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -25px);
+  }
+  10% {
+    transform: translate(0, -50px);
+  }
+  15% {
+    transform: translate(0, -75px);
+  }
+  20% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(0, -150px);
+  }
+  30% {
+    transform: translate(10px, -200px);
+    rotate: 5deg;
+  }
+  35% {
+    transform: translate(35px, -250px);
+    rotate: -5deg;
+  }
+  40% {
+    transform: translate(65px, -300px);
+    rotate: 5deg;
+  }
+  45% {
+    transform: translate(95px, -310px);
+    rotate: -5deg;
+  }
+  50% {
+    transform: translate(135px, -300px);
+    rotate: 5deg;
+  }
+  55% {
+    transform: translate(175px, -325px);
+    rotate: -5deg;
+  }
+  60% {
+    transform: translate(225px, -350px);
+    rotate: 5deg;
+  }
+  65% {
+    transform: translate(250px, -325px);
+    rotate: -5deg;
+  }
+  70% {
+    transform: translate(275px, -300px);
+    rotate: 5deg;
+  }
+  75% {
+    transform: translate(300px, -275px);
+    rotate: -3deg;
+  }
+  80% {
+    transform: translate(325px, -250px);
+    rotate: 3deg;
+  }
+  85% {
+    transform: translate(355px, -200px);
+    rotate: -2deg;
+  }
+  90% {
+    transform: translate(375px, -150px);
+    rotate: 2deg;
+  }
+  95% {
+    transform: translate(410px, -50px);
+    rotate: -2deg;
+  }
+  100% {
+    transform: translate(430px, 12px);
+  }
+}
+.volcano .volcan:hover .html {
+  -webkit-animation: shimmy-4 15s;
+          animation: shimmy-4 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes shimmy-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -30px);
+  }
+  10% {
+    transform: translate(0, -60px);
+  }
+  15% {
+    transform: translate(0, -85px);
+  }
+  20% {
+    transform: translate(0, -111px);
+  }
+  25% {
+    transform: translate(0, -170px);
+  }
+  30% {
+    transform: translate(-10px, -225px);
+    rotate: 3deg;
+  }
+  35% {
+    transform: translate(-75px, -275px);
+    rotate: -3deg;
+  }
+  40% {
+    transform: translate(-100px, -325px);
+    rotate: 5deg;
+  }
+  45% {
+    transform: translate(-125px, -330px);
+    rotate: -5deg;
+  }
+  50% {
+    transform: translate(-150px, -325px);
+    rotate: 5deg;
+  }
+  55% {
+    transform: translate(-175px, -350px);
+    rotate: -5deg;
+  }
+  60% {
+    transform: translate(-200px, -375px);
+    rotate: 5deg;
+  }
+  65% {
+    transform: translate(-225px, -400px);
+    rotate: -5deg;
+  }
+  70% {
+    transform: translate(-250px, -330px);
+    rotate: 5deg;
+  }
+  75% {
+    transform: translate(-275px, -300px);
+    rotate: -5deg;
+  }
+  80% {
+    transform: translate(-300px, -250px);
+    rotate: 3deg;
+  }
+  85% {
+    transform: translate(-325px, -220px);
+    rotate: -2deg;
+  }
+  90% {
+    transform: translate(-350px, -170px);
+    rotate: 2deg;
+  }
+  95% {
+    transform: translate(-375px, -60px);
+    rotate: -2deg;
+  }
+  100% {
+    transform: translate(-425px, 12px);
+  }
+}
+@keyframes shimmy-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, -30px);
+  }
+  10% {
+    transform: translate(0, -60px);
+  }
+  15% {
+    transform: translate(0, -85px);
+  }
+  20% {
+    transform: translate(0, -111px);
+  }
+  25% {
+    transform: translate(0, -170px);
+  }
+  30% {
+    transform: translate(-10px, -225px);
+    rotate: 3deg;
+  }
+  35% {
+    transform: translate(-75px, -275px);
+    rotate: -3deg;
+  }
+  40% {
+    transform: translate(-100px, -325px);
+    rotate: 5deg;
+  }
+  45% {
+    transform: translate(-125px, -330px);
+    rotate: -5deg;
+  }
+  50% {
+    transform: translate(-150px, -325px);
+    rotate: 5deg;
+  }
+  55% {
+    transform: translate(-175px, -350px);
+    rotate: -5deg;
+  }
+  60% {
+    transform: translate(-200px, -375px);
+    rotate: 5deg;
+  }
+  65% {
+    transform: translate(-225px, -400px);
+    rotate: -5deg;
+  }
+  70% {
+    transform: translate(-250px, -330px);
+    rotate: 5deg;
+  }
+  75% {
+    transform: translate(-275px, -300px);
+    rotate: -5deg;
+  }
+  80% {
+    transform: translate(-300px, -250px);
+    rotate: 3deg;
+  }
+  85% {
+    transform: translate(-325px, -220px);
+    rotate: -2deg;
+  }
+  90% {
+    transform: translate(-350px, -170px);
+    rotate: 2deg;
+  }
+  95% {
+    transform: translate(-375px, -60px);
+    rotate: -2deg;
+  }
+  100% {
+    transform: translate(-425px, 12px);
+  }
+}
+.volcano .volcan:active .shake-volcan {
+  -webkit-animation: shake 0s;
+          animation: shake 0s;
+}
+.volcano .grass {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  z-index: 1;
+  background: linear-gradient(360deg, #437f37, #225019);
+  top: 475px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 4 !important;
+}
+.volcano .grass .df-grass {
+  background-color: rgba(47, 97, 37, 0.4666666667);
+  width: 50px;
+  height: 150px;
+}
+.volcano .sky {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  top: 30px;
+  left: -150px;
+}
+.volcano .sky .cloud-1 {
+  max-width: 100%;
+  position: relative;
+  -webkit-animation: mymove 50s infinite;
+          animation: mymove 50s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 500px;
+  }
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 500px;
+  }
+}
+.volcano .sky .cloud-1 img {
+  width: 150px;
+}
+.volcano .sky .cloud-2 {
+  max-width: 100%;
+  position: relative;
+  -webkit-animation: mymove 50s infinite;
+          animation: mymove 50s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 500px;
+  }
+}
+.volcano .sky .cloud-2 img {
+  width: 130px;
+}
+.volcano .fly {
+  max-width: 100%;
+  position: absolute;
+  top: 250px;
+  left: -80px;
+  transform: rotate(-30deg);
+}
+.volcano .fly .plane {
+  position: relative;
+  -webkit-animation: mymove 55s infinite;
+          animation: mymove 55s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  z-index: 1 !important;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 900px;
+  }
+}
+.volcano .fly .plane img {
+  width: 70px;
+}/*# sourceMappingURL=style.css.map */
