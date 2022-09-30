@@ -1,0 +1,344 @@
+body {
+  max-width: 1400px;
+  height: 900px;
+}
+
+.iphone-14 {
+  width: 220px;
+  height: 430px;
+  position: relative;
+  top: 25%;
+  left: 60%;
+  background: linear-gradient(246deg, rgb(47, 54, 62) 50%, rgb(26, 33, 39) 40%);
+  border-radius: 30px;
+  border: 4px solid #2b3034;
+  background-color: rgba(26, 33, 39, 0.8078431373);
+}
+.iphone-14 .apple-logo {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  background: linear-gradient(246deg, rgb(92, 95, 100) 54%, rgba(43, 46, 51, 0.8) 40%);
+  width: 50px;
+  height: 45px;
+  border-radius: 35% 35% 41% 41%/42% 42% 75% 75%;
+}
+.iphone-14 .apple-logo::before {
+  background: #5c5f64;
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  margin: -13px 0 0 23px;
+  border-radius: 100px 0;
+  border-color: transparent;
+  z-index: 5;
+}
+.iphone-14 .apple-logo::after {
+  background: transparent;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 4;
+  box-shadow: 14px 42px 0 rgb(26, 33, 39), 40px 8px 0 rgb(47, 54, 62), 14px -16px 0 rgb(47, 54, 62), 40px 9px 0 rgb(47, 54, 62), 100px 203.5px 10px 12px rgb(26, 33, 39), 88.5px 185.5px 17px 20px rgb(26, 33, 39), 78.5px 157px 36px 26px rgb(26, 33, 39), 53px 142px 74px 54px rgb(26, 33, 39);
+}
+.iphone-14 .camera {
+  position: absolute;
+  top: 1.5%;
+  left: 2.5%;
+  background-color: #3c3f46;
+  width: 85px;
+  height: 85px;
+  border-radius: 20px;
+  box-shadow: 3px 4px rgba(26, 33, 39, 0.7);
+}
+.iphone-14 .camera .lens-1 {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid #24272c;
+  background: linear-gradient(246deg, rgba(1, 1, 1, 0.664) 50%, rgb(1, 1, 1) 50%);
+  box-shadow: 0.5px 2px rgba(26, 33, 39, 0.3);
+}
+.iphone-14 .camera .lens-1 .lens-1-inner {
+  width: 10px;
+  height: 10px;
+  margin: 7px 0 0 7px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(71deg, rgb(0, 0, 0) 1%, rgb(0, 0, 0) 24%, rgb(21, 46, 154) 100%);
+  border-radius: 50%;
+  border: 6px solid #121314;
+}
+.iphone-14 .camera .lens-2 {
+  position: absolute;
+  top: 48%;
+  left: 49%;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid #24272c;
+  background: linear-gradient(246deg, rgba(1, 1, 1, 0.856) 50%, rgb(1, 1, 1) 50%);
+  box-shadow: -1px 2px rgba(26, 33, 39, 0.38);
+}
+.iphone-14 .camera .lens-2 .lens-2-inner {
+  width: 10px;
+  height: 10px;
+  margin: 7px 0 0 7px;
+  background: rgb(16, 55, 53);
+  background: linear-gradient(95deg, rgb(16, 55, 53) 22%, rgb(0, 0, 0) 50%, rgb(17, 54, 113) 84%);
+  border-radius: 50%;
+  border: 6px solid #121314;
+}
+.iphone-14 .camera .flash {
+  position: absolute;
+  top: 14%;
+  left: 68%;
+  width: 15px;
+  height: 15px;
+  background-color: #b7b7b5;
+  border: 2px solid #616264;
+  border-radius: 50%;
+  box-shadow: -1px 3px rgba(26, 33, 39, 0.15);
+}
+.iphone-14 .camera .flash .flash-inner {
+  background-color: #e4d9cc;
+  border: 3px solid #c7c7c6;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin: 2px 0 0 2px;
+}
+.iphone-14 .camera .mic {
+  position: absolute;
+  top: 72%;
+  left: 20%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgb(17, 17, 17) 0%, rgb(60, 63, 70) 5%, rgb(17, 17, 17) 10%, rgb(60, 63, 70) 15%, rgb(17, 17, 17) 20%, rgb(60, 63, 70) 25%, rgb(17, 17, 17) 30%, rgb(59, 62, 69) 35%, rgb(17, 17, 17) 40%, rgb(59, 62, 69) 45%, rgb(17, 17, 17) 50%, rgb(59, 62, 69) 55%, rgb(17, 17, 17) 60%, rgb(59, 62, 69) 65%, rgb(17, 17, 17) 70%, rgb(59, 62, 69) 75%, rgb(17, 17, 17) 80%, rgb(59, 62, 69) 85%, rgb(17, 17, 17) 90%, rgb(59, 62, 69) 95%, rgb(17, 17, 17) 100%);
+  box-shadow: 0px 1px 2px 3px rgba(48, 50, 54, 0.747);
+}
+.iphone-14 .camera .camera-shadow {
+  position: absolute;
+  top: 106%;
+  left: 59%;
+  width: 6px;
+  height: 2px;
+  border-radius: 0 170% 200% 0;
+  background-color: rgb(26, 33, 39);
+}
+.iphone-14 .line-1 {
+  position: absolute;
+  top: 9%;
+  left: -1.9%;
+  width: 4px;
+  height: 3px;
+  background-color: #3e3e41;
+}
+.iphone-14 .line-2 {
+  position: absolute;
+  top: 90%;
+  left: -1.9%;
+  width: 4px;
+  height: 3px;
+  background-color: #3e3e41;
+}
+.iphone-14 .line-3 {
+  position: absolute;
+  top: 90%;
+  left: 100%;
+  width: 4px;
+  height: 3px;
+  background-color: #464749;
+}
+.iphone-14 .line-4 {
+  position: absolute;
+  top: 9%;
+  left: 100%;
+  width: 4px;
+  height: 3px;
+  background-color: #3e3e41;
+}
+.iphone-14 .line-5 {
+  position: absolute;
+  top: 100.1%;
+  left: 80%;
+  width: 4px;
+  height: 3px;
+  background-color: #464749;
+  rotate: 90deg;
+}
+.iphone-14 .line-6 {
+  position: absolute;
+  top: -0.8%;
+  left: 15%;
+  width: 4px;
+  height: 3px;
+  background-color: #3e3e41;
+  rotate: 90deg;
+}
+.iphone-14 .button-1 {
+  position: absolute;
+  top: 35%;
+  left: -13.4%;
+  background-color: rgb(47, 54, 62);
+  width: 50px;
+  height: 2px;
+  rotate: 90deg;
+  border-radius: 3px;
+  z-index: -1;
+}
+.iphone-14 .button-2 {
+  position: absolute;
+  top: 30%;
+  left: 93%;
+  background-color: rgb(47, 54, 62);
+  width: 40px;
+  height: 2px;
+  rotate: 90deg;
+  border-radius: 3px;
+  z-index: -1;
+}
+.iphone-14 .button-3 {
+  position: absolute;
+  top: 42%;
+  left: 93%;
+  background-color: rgb(47, 54, 62);
+  width: 40px;
+  height: 2px;
+  rotate: 90deg;
+  border-radius: 3px;
+  z-index: -1;
+}
+.iphone-14 .button-4 {
+  position: absolute;
+  top: 19%;
+  left: 97.6%;
+  background-color: rgb(47, 54, 62);
+  width: 20px;
+  height: 2.5px;
+  rotate: 90deg;
+  border-radius: 3px;
+  z-index: -1;
+}
+.iphone-14 .hidden {
+  background-color: #fff;
+  height: 280px;
+  width: 80px;
+  position: absolute;
+  top: 52%;
+  left: 101.9%;
+  z-index: 5;
+}
+.iphone-14 .iphone-14-side {
+  width: 25px;
+  height: 430px;
+  position: absolute;
+  top: 1%;
+  left: 138.5%;
+  background-color: #363b42;
+  border-radius: 5px;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner {
+  position: relative;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .power-button {
+  position: absolute;
+  top: 110px;
+  left: 8px;
+  background-color: #363b42;
+  border-top: 0.2px solid rgba(40, 41, 46, 0.7450980392);
+  border-bottom: 0.2px solid rgba(40, 41, 46, 0.7450980392);
+  border-left: 1.5px solid #1c1d20;
+  border-right: 1.5px solid #1c1d20;
+  border-radius: 10px;
+  width: 7px;
+  height: 55px;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .side-line-1 {
+  background-color: #474d55;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 25px;
+  height: 4px;
+  box-shadow: 0px -30px 12px 1px #aab8cb;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .side-line-2 {
+  background-color: #474d55;
+  position: absolute;
+  top: 385px;
+  left: 0;
+  width: 25px;
+  height: 4px;
+  box-shadow: 0px 31px 10px 1px #aab8cb;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .side-camera {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  background-color: #374149;
+  width: 5px;
+  height: 85px;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .camera-curve-1 {
+  position: absolute;
+  top: 6px;
+  left: 26px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .camera-curve-2 {
+  position: absolute;
+  top: 91.5px;
+  left: 26px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .side-camera-lens-1 {
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  height: 33px;
+  width: 3px;
+  background-color: #242629;
+  box-shadow: -2px 0px 4px 0px;
+}
+.iphone-14 .iphone-14-side .iphone-14-side-inner .side-camera-lens-2 {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  height: 33px;
+  width: 3px;
+  background-color: #242629;
+  box-shadow: -2px 0px 4px 0px;
+}
+.iphone-14 .shadow-hidden {
+  border-bottom: 84px solid #fff;
+  border-radius: 150px;
+  position: absolute;
+  top: 59.4%;
+  left: -17%;
+  width: 263px;
+  height: 200px;
+  rotate: -0.5deg;
+  z-index: 5;
+}
+.iphone-14 .shadow-hidden-2 {
+  background-color: #fff;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 101%;
+  left: 11%;
+  z-index: 5;
+}/*# sourceMappingURL=style.css.map */
