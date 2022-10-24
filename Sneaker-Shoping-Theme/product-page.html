@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="/css/product-page-css/content.css">
+    <link rel="stylesheet" href="/css/product-page-css/footer.css">
+    <link rel="stylesheet" href="/css/product-page-css/header.css">
+    <title>Product Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="lang">
+                <select id="language" name="language">
+                    <option value="English">English</option>
+                    <option value="Turkish">Turkish</option>
+                    <option value="Chinese">Chinese</option>
+                </select>
+            </div>
+            <div class="header-logo">
+                <p>Sneaker <span>Shop</span></p>
+            </div>
+            <div class="header-top-navigation">
+                <div class="profil"><a href="#"><i class="fa-solid fa-user"></i></a></div>
+                <div class="shop-bag"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="category">
+                <ul id="category-list">
+                    <li class="categories-drop">
+                        <a href="#" class="drop-title">Brands</a>
+
+                        <ul id="dropdown-menu-1">
+                            <li><a href="#">Nike Air Force </a></li>
+                            <li><a href="#">Nike Air Max</a></li>
+                            <li><a href="#">Air Jordan</a> </li>
+                            <li><a href="#">Vans Old Skool</a></li>
+                            <li><a href="#">Adidas Superstar</a></li>
+                            <li><a href="#">Adidas Ozweego</a></li>
+                            <li><a href="#">New Balance 327</a></li>
+                            <li><a href="#">Converse Run Star</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="filter-drop">
+                        <a href="#" class="drop-title">Filter</a>
+                        <ul id="dropdown-menu-2">
+                            <li><a href="#">The Newests</a></li>
+                            <li><a href="#">Bestsellers</a></li>
+                            <li><a href="#">Discount</a></li>
+                            <li><a href="#">NBA</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Sneaker</a></li>
+                            <li><a href="#">Eco-Friendly</a></li>
+                        </ul>
+                    </li>
+                    <li class="about-drop">
+                        <a href="#" class="drop-title">About Us</a>
+                        <ul id="dropdown-menu-3">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Malls</a></li>
+                            <li><a href="#">Carier</a></li>
+                        </ul>
+                    </li>
+                    <li class="helps-drop">
+                        <a href="#" class="drop-title">Helps</a>
+                        <div class="dropdown">
+                            <ul id="dropdown-menu-4">
+                                <li><a href="#">Communication</a></li>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                                <li><a href="#">Trading Guide</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="product-page">
+            <div class="product-side">
+                <div class="w3-content">
+                    <img class="mySlides" src="/img/stock/stock-1/1.jpg" style="width:100%;display:none">
+                    <img class="mySlides" src="/img/stock/stock-1/2.jpg" style="width:100%">
+                    <img class="mySlides" src="/img/stock/stock-1/3.jpg" style="width:100%;display:none">
+                    <img class="mySlides" src="/img/stock/stock-1/4.jpg" style="width:100%;display:none">
+                    <img class="mySlides" src="/img/stock/stock-1/5.jpg" style="width:100%;display:none">
+                    <div class="w3-row-padding w3-section">
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="/img/stock/stock-1/1.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="/img/stock/stock-1/2.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="/img/stock/stock-1/3.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="/img/stock/stock-1/4.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="/img/stock/stock-1/5.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-gallery">
+                    <img src="/img/stock/stock-1/1.jpg" alt="">
+                    <img src="/img/stock/stock-1/2.jpg" alt="">
+                    <img src="/img/stock/stock-1/3.jpg" alt="">
+                    <img src="/img/stock/stock-1/4.jpg" alt="">
+                    <img src="/img/stock/stock-1/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="detail-side">
+                <div class="product-detail">
+                    <div class="product-model">
+                        <h1>Yeezy Boost 350 V2 Carbon</h1>
+                    </div>
+                    <div class="product-brand">
+                        Adidas
+                    </div>
+                    <div class="product-price">
+                        <p>$220</p>
+                    </div>
+                </div>
+                <div class="select-size">
+                    <div class="size-title">
+                        <div class="size-subtitle">
+                            Select Size
+                        </div>
+                        <div class="size-guide">
+                            <a href="#">Size Guide</a>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <div class="size-no">
+                            <a href="#">38</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">38,5</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">39</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">39,5</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">40</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">40,5</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">41</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">41,5</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">42</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">42,5</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">43</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">43,5</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">44</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">44,5</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">45</a>
+                        </div>
+                        <div class="size-no">
+                            <a href="#">46</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-side">
+                    <div class="add-to-bag">
+                        <button><a href="#">Add to Bag</a></button>
+                    </div>
+                    <div class="favorite">
+                        <button><a href="#">Favorite <i class="fa-regular fa-heart"></i></a></button>
+                    </div>
+                </div>
+                <div class="transfer-info">
+                    <div class="transfer-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <div class="transfer-text">
+                        <h2>Free shipping</h2>
+                        Free shipping on orders $200 or more
+                    </div>
+                </div>
+                <div class="return-info">
+                    <div class="return-icon">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <div class="return-text">
+                        <h2>Returns and Exchanges</h2>
+                        Possibility of return within 30 days of receiving the order
+                    </div>
+                </div>
+                <div class="acordion-reviews">
+                    <div class="item">
+                        <input type="checkbox" name="test">
+                        <div class="acordion-title">
+                            <div class="acordion-subtitle"><i class="fa fa-caret-right"></i>Product Description</div>
+                        </div>
+                        <div class="acordion-content">
+                            <p>Kanye West and adidas keep the ball rolling with the Yeezy 350 V2 Carbon. This release marks
+                                the 12th colorway of the favorite 350 V2 model in 2020 and this colorway’s dark-hued upper
+                                makes it the perfect piece of footwear for fall.
+    
+                                The Yeezy 350 V2 Carbon holds all of the familiar elements that make the silhouette so
+                                popular; breathable Primeknit solid black mesh with its signature side stripe, ribbed
+                                patterned off-white midsole, and classic BOOST cushioning make the 350 V2 Carbon easy to
+                                love and easy to wear.
+    
+                                The Yeezy 350 V2 Carbon released in October of 2020.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" name="test">
+                        <div class="acordion-title">
+                            <div class="acordion-subtitle"><i class="fa fa-caret-right"></i>Reviews (9+)</div>
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> </div>
+                        </div>
+                        <div class="acordion-content">
+                            <div class="reviews">
+                                <div class="reviews-showcase">
+                                    <div class="reviews-info">
+                                        <div class="reviews-icon">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="user-name">
+                                            e0fc2709-859f-43d7
+                                        </div>
+                                        <div class="date">
+                                            Jun 06, 2022
+                                        </div>
+                                    </div>
+                                    <div class="reviews-text">
+                                        <p>These are so cute and best thing is they dont crease like i did every
+                                            possible movement
+                                            and
+                                            they still look fresh!! Also heres a tip dont pay 20 dollars for two day
+                                            shipping..Mine
+                                            got
+                                            here 2 days after i ordered them</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-showcase">
+                                    <div class="reviews-info">
+                                        <div class="reviews-icon">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="user-name">
+                                            14931357929
+                                        </div>
+                                        <div class="date">
+                                            Sep 25, 2022
+                                        </div>
+                                    </div>
+                                    <div class="reviews-text">
+                                        <p>Very comfortable and stylish. New favorite sneaker!</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-showcase">
+                                    <div class="reviews-info">
+                                        <div class="reviews-icon">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="user-name">
+                                            KylaP171116639
+                                        </div>
+                                        <div class="date">
+                                            Oct 10, 2022
+                                        </div>
+                                    </div>
+                                    <div class="reviews-text">
+                                        <p>Beautiful shoes! These are my first pair of nice shoes and I’m obsessed. I’ve
+                                            ordered
+                                            protectant and crease guards for them so I feel confident wearing them as
+                                            much as I want
+                                            without ruining them. The colors are super.</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-showcase">
+                                    <div class="reviews-info">
+                                        <div class="reviews-icon">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="user-name">
+                                            KylaP171116639
+                                        </div>
+                                        <div class="date">
+                                            Oct 10, 2022
+                                        </div>
+                                    </div>
+                                    <div class="reviews-text">
+                                        <p>Beautiful shoes! These are my first pair of nice shoes and I’m obsessed. I’ve
+                                            ordered
+                                            protectant and crease guards for them so I feel confident wearing them as
+                                            much as I want
+                                            without ruining them. The colors are super.</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-showcase">
+                                    <div class="reviews-info">
+                                        <div class="reviews-icon">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="user-name">
+                                            KylaP171116639
+                                        </div>
+                                        <div class="date">
+                                            Oct 10, 2022
+                                        </div>
+                                    </div>
+                                    <div class="reviews-text">
+                                        <p>Beautiful shoes! These are my first pair of nice shoes and I’m obsessed. I’ve
+                                            ordered
+                                            protectant and crease guards for them so I feel confident wearing them as
+                                            much as I want
+                                            without ruining them. The colors are super.</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-showcase">
+                                    <div class="reviews-info">
+                                        <div class="reviews-icon">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="user-name">
+                                            KylaP171116639
+                                        </div>
+                                        <div class="date">
+                                            Oct 10, 2022
+                                        </div>
+                                    </div>
+                                    <div class="reviews-text">
+                                        <p>Beautiful shoes! These are my first pair of nice shoes and I’m obsessed. I’ve
+                                            ordered
+                                            protectant and crease guards for them so I feel confident wearing them as
+                                            much as I want
+                                            without ruining them. The colors are super.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <div class="footer-logo">
+                    <p>Sneaker <span>Shop</span></p>
+                </div>
+                <div class="payment">
+                    <img src="/img/payment/amex.png" alt="">
+                    <img src="/img/payment/apple-pay.png" alt="">
+                    <img src="/img/payment/cirrus.png" alt="">
+                    <img src="/img/payment/discover.png" alt="">
+                    <img src="/img/payment/google.png" alt="">
+                    <img src="/img/payment/paypal.png" alt="">
+                    <img src="/img/payment/union.png" alt="">
+                    <img src="/img/payment/visa.png" alt="">
+                </div>
+            </div>
+            <div class="footer-top-middle">
+                <div class="footer-navigation">
+                    <ul>
+                        <p>Most Popular Brands</p>
+                        <li><a href="#">Nike Air Max</a></li>
+                        <li><a href="#">Air Jordan</a> </li>
+                        <li><a href="#">Vans Old Skool</a></li>
+                        <li><a href="#">Adidas Superstar</a></li>
+                        <li><a href="#">Adidas Ozweego</a></li>
+                        <li><a href="#">New Balance 327</a></li>
+                        <li><a href="#">Converse Run Star</a></li>
+                    </ul>
+                    <ul>
+                        <p>About us</p>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Malls</a></li>
+                        <li><a href="#">Carier</a></li>
+                        <li><a href="#">Branches</a></li>
+                    </ul>
+                    <ul>
+                        <p>Helps</p>
+                        <li><a href="#">Communication</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Trading Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-top-right">
+                <p>Social Media</p>
+                <div class="social-icon">
+                    <img src="/img/social/facebook.png" alt="">
+                    <img src="/img/social/instagram.png" alt="">
+                    <img src="/img/social/telegram.png" alt="">
+                    <img src="/img/social/twitter.png" alt="">
+                    <img src="/img/social/youtube.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© All rights reserved. Sneakers Shop 2022</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-opacity-off";
+        }
+    </script>
+
+    <script>
+        $('.reviews').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    </script>
+
+</body>
+
+</html>

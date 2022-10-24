@@ -1,0 +1,568 @@
+@charset "UTF-8";
+.content {
+  font-family: "Montserrat";
+}
+
+.scrolling-text {
+  background-color: transparent;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  height: 40px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='67px' width='400px'><text x='50' y='50' fill='black' opacity='5' font-size='50'>New Brands</text></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Move it (define the animation) */
+}
+.scrolling-text .scroll-left {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.scrolling-text .transparant {
+  color: transparent;
+  opacity: 0;
+}
+.scrolling-text .scroll-left p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: rgb(133, 57, 57);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Audiowide";
+  line-height: 40px;
+  text-align: center;
+  /* Starting position */
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -webkit-animation: scroll-left 25s linear infinite;
+  animation: scroll-left 25s linear infinite;
+}
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes scroll-left {
+  0% {
+    /* Browser bug fix */
+    /* Browser bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    /* Browser bug fix */
+    /* Browser bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+.content-top-slider {
+  margin: 100px 0;
+}
+.content-top-slider .slick-slider img {
+  width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+.content-top-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.content-top-slider .slick-dots .presentation button {
+  left: 0px;
+  opacity: 1;
+  margin-right: 5px;
+}
+.content-top-slider .slick-dots .presentation::marker {
+  opacity: 0;
+}
+.content-top-slider .slick-prev {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.content-top-slider .slick-prev::before {
+  content: "❮";
+  color: rgb(17, 101, 104);
+  font-size: 96px;
+  font-weight: lighter;
+  position: absolute;
+  top: 0;
+}
+.content-top-slider .slick-next {
+  position: absolute;
+  top: 40%;
+  right: 23%;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.content-top-slider .slick-next::before {
+  content: "❯";
+  color: rgb(17, 101, 104);
+  font-size: 96px;
+  font-weight: lighter;
+  position: absolute;
+  top: 0;
+}
+
+.new-collection {
+  margin: 10% 0;
+}
+.new-collection .collection-subtitle {
+  text-align: center;
+  margin: 50px 0;
+}
+.new-collection .collection-subtitle h1 {
+  font-family: "Audiowide";
+}
+.new-collection .collection-showcase {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(/img/graffiti-graffiti-brick-wall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+.new-collection .collection-showcase .showcase {
+  flex: 0 0 40%;
+  text-align: center;
+  margin: 10px 0;
+}
+.new-collection .collection-showcase .showcase .video {
+  margin: 0 auto;
+  background-image: url(/img/new-collection/new-collection-1.mp4);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.new-collection .collection-showcase .showcase .video .thevideo {
+  border-radius: 30px;
+}
+.new-collection .collection-showcase .showcase .video .video-shop-1 {
+  width: 120px;
+  top: 85%;
+  left: 43%;
+  position: absolute;
+  height: 40px;
+  border-radius: 30px;
+  background-color: rgb(255, 94, 0);
+  border-color: transparent;
+  opacity: 0;
+}
+.new-collection .collection-showcase .showcase .video .video-shop-1 a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Audiowide";
+}
+.new-collection .collection-showcase .showcase .video .video-shop-1:hover {
+  background-color: rgb(27, 130, 226);
+  transition: all 0.5s;
+}
+.new-collection .collection-showcase .showcase .video .video-shop-1:hover a {
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.new-collection .collection-showcase .showcase .video:hover .video-shop-1 {
+  opacity: 1;
+  transition: all 2s;
+}
+.new-collection .collection-showcase .showcase-2 {
+  flex: 0 0 40%;
+  text-align: center;
+  margin: 10px 0;
+}
+.new-collection .collection-showcase .showcase-2 .video {
+  margin: 0 auto;
+  background-image: url(/img/new-collection/new-collection-2.mp4);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.new-collection .collection-showcase .showcase-2 .video .thevideo {
+  border-radius: 30px;
+}
+.new-collection .collection-showcase .showcase-2 .video .video-shop-2 {
+  width: 120px;
+  top: 85%;
+  left: 43%;
+  position: absolute;
+  height: 40px;
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+  border-color: transparent;
+  opacity: 0;
+}
+.new-collection .collection-showcase .showcase-2 .video .video-shop-2 a {
+  color: rgb(255, 94, 0);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Audiowide";
+}
+.new-collection .collection-showcase .showcase-2 .video .video-shop-2:hover {
+  background-color: rgb(236, 240, 24);
+  transition: all 0.5s;
+}
+.new-collection .collection-showcase .showcase-2 .video .video-shop-2:hover a {
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+.new-collection .collection-showcase .showcase-2 .video:hover .video-shop-2 {
+  opacity: 1;
+  transition: all 2s;
+}
+.new-collection .collection-showcase .showcase-3 {
+  flex: 0 0 40%;
+  text-align: center;
+  margin: 10px 0;
+}
+.new-collection .collection-showcase .showcase-3 .video {
+  margin: 0 auto;
+  background-image: url(/img/new-collection/new-collection-3.mp4);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.new-collection .collection-showcase .showcase-3 .video .thevideo {
+  border-radius: 30px;
+}
+.new-collection .collection-showcase .showcase-3 .video .video-shop-3 {
+  width: 120px;
+  top: 85%;
+  left: 43%;
+  position: absolute;
+  height: 40px;
+  border-radius: 30px;
+  background-color: rgb(255, 0, 0);
+  border-color: transparent;
+  opacity: 0;
+}
+.new-collection .collection-showcase .showcase-3 .video .video-shop-3 a {
+  color: rgb(61, 4, 75);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Audiowide";
+}
+.new-collection .collection-showcase .showcase-3 .video .video-shop-3:hover {
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+.new-collection .collection-showcase .showcase-3 .video .video-shop-3:hover a {
+  color: rgb(255, 0, 0);
+  transition: all 0.5s;
+}
+.new-collection .collection-showcase .showcase-3 .video:hover .video-shop-3 {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.content-text {
+  text-align: center;
+}
+.content-text h1 {
+  font-size: 46px;
+  font-family: "Audiowide";
+}
+.content-text h1 span {
+  font-family: "Splash";
+  color: rgb(255, 0, 64);
+  letter-spacing: 2px;
+}
+
+.stock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 100px 10% 100px;
+}
+.stock .stock-showcase {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.stock .stock-showcase .stock-img {
+  width: 60%;
+  flex: 0 0 50%;
+  transition: all 0.7s;
+  overflow: hidden;
+}
+.stock .stock-showcase .stock-img img {
+  width: 100%;
+  transition: all 0.7s;
+}
+.stock .stock-showcase .brands {
+  margin-top: 30px;
+}
+.stock .stock-showcase .brands p {
+  font-size: 14px;
+  color: rgb(44, 43, 43);
+}
+.stock .stock-showcase .detail {
+  flex-wrap: wrap;
+  width: 65%;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.stock .stock-showcase .price p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.stock .stock-showcase:hover .stock-img {
+  transform: scale(0.95);
+}
+.stock .stock-showcase:hover .stock-img img {
+  transform: scale(1.2);
+}
+.stock .stock-showcase .buy {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  opacity: 0;
+}
+.stock .stock-showcase .buy a {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 25px;
+  box-shadow: 5px 5px 0 rgb(255, 0, 0);
+}
+.stock .stock-showcase:hover .buy {
+  opacity: 1;
+  transition: 2s;
+}
+
+.content-banner {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.content-banner img {
+  max-width: 100%;
+}
+
+.content-brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.content-brands .brand-showcase {
+  position: relative;
+}
+.content-brands .brand-showcase img {
+  cursor: pointer;
+}
+.content-brands .brand-showcase .view {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  opacity: 0;
+}
+.content-brands .brand-showcase .view a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #000;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 0px 2px red;
+}
+.content-brands .brand-showcase:hover img {
+  rotate: 2000deg;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 3s;
+}
+.content-brands .brand-showcase:hover .view {
+  opacity: 1;
+  transition: all 4s;
+}
+
+.stock-2-subtitle {
+  margin-top: 5%;
+  text-decoration: underline;
+}
+.stock-2-subtitle h1 {
+  text-align: center;
+  font-size: 46px;
+  font-family: "Audiowide";
+  letter-spacing: 2px;
+}
+
+.stock-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 100px 10% 100px;
+}
+.stock-2 .stock-2-showcase {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.stock-2 .stock-2-showcase .stock-2-img {
+  width: 60%;
+  flex: 0 0 50%;
+  transition: all 0.7s;
+  overflow: hidden;
+}
+.stock-2 .stock-2-showcase .stock-2-img img {
+  width: 100%;
+  transition: all 0.7s;
+}
+.stock-2 .stock-2-showcase .stock-2-brands {
+  margin-top: 30px;
+}
+.stock-2 .stock-2-showcase .stock-2-brands p {
+  font-size: 14px;
+  color: rgb(44, 43, 43);
+}
+.stock-2 .stock-2-showcase .stock-2-detail {
+  flex-wrap: wrap;
+  width: 65%;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.stock-2 .stock-2-showcase .stock-2-price p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.stock-2 .stock-2-showcase:hover .stock-2-img {
+  transform: scale(0.95);
+}
+.stock-2 .stock-2-showcase:hover .stock-2-img img {
+  transform: scale(1.8);
+}
+.stock-2 .stock-2-showcase .buy-2 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  opacity: 0;
+}
+.stock-2 .stock-2-showcase .buy-2 a {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 25px;
+  box-shadow: 5px 5px 0 rgb(255, 0, 0);
+}
+.stock-2 .stock-2-showcase:hover .buy-2 {
+  opacity: 1;
+  transition: 2s;
+}
+
+@media screen and (max-width: 1800px) {
+  .content .collection-showcase .showcase {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 10px 40px;
+  }
+  .content .collection-showcase .showcase .video {
+    margin: 0 auto;
+    background-image: url(/img/new-collection/new-collection-1.mp4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .collection-showcase .showcase .video .thevideo {
+    border-radius: 30px;
+    width: 100%;
+  }
+  .content .collection-showcase .showcase .video .video-shop-1 {
+    width: 120px;
+    top: 85%;
+    left: 38%;
+    position: absolute;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .content .collection-showcase .showcase-2 {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 10px 40px;
+  }
+  .content .collection-showcase .showcase-2 .video {
+    margin: 0 auto;
+    background-image: url(/img/new-collection/new-collection-1.mp4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .collection-showcase .showcase-2 .video .thevideo {
+    border-radius: 30px;
+    width: 100%;
+  }
+  .content .collection-showcase .showcase-2 .video .video-shop-2 {
+    width: 120px;
+    top: 85%;
+    left: 38%;
+    position: absolute;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .content .collection-showcase .showcase-3 {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 10px 40px;
+  }
+  .content .collection-showcase .showcase-3 .video {
+    margin: 0 auto;
+    background-image: url(/img/new-collection/new-collection-1.mp4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  .content .collection-showcase .showcase-3 .video .thevideo {
+    border-radius: 30px;
+    width: 100%;
+  }
+  .content .collection-showcase .showcase-3 .video .video-shop-3 {
+    width: 120px;
+    top: 85%;
+    left: 38%;
+    position: absolute;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .content .stock .stock-showcase .buy {
+    top: 25%;
+    left: 35%;
+  }
+  .content .stock-2 .stock-2-showcase .buy-2 {
+    top: 25%;
+    left: 35%;
+  }
+}/*# sourceMappingURL=content.css.map */

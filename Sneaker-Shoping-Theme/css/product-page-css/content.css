@@ -1,0 +1,334 @@
+.content {
+  font-family: "Montserrat";
+}
+
+.product-page {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  margin-top: 10%;
+}
+.product-page .product-side {
+  position: relative;
+  flex: 0 0 40%;
+}
+.product-page .product-side .w3-content {
+  max-width: 100% !important;
+  margin: 0 auto;
+  height: 550px;
+}
+.product-page .product-side .w3-row-padding {
+  position: absolute;
+  top: 0%;
+  right: -25%;
+  width: 25%;
+}
+.product-page .product-side .product-gallery {
+  width: 100%;
+  margin-top: 5%;
+  padding-top: 20px;
+}
+.product-page .product-side .product-gallery img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.product-page .detail-side {
+  flex: 0 0 20%;
+}
+.product-page .detail-side .product-detail .product-model {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.product-page .detail-side .product-detail .product-model h1 {
+  margin: 0;
+}
+.product-page .detail-side .product-detail .product-brand {
+  font-size: 18px;
+  font-weight: 500;
+}
+.product-page .detail-side .product-detail .product-price p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.product-page .detail-side .select-size {
+  margin-top: 70px;
+}
+.product-page .detail-side .select-size .size-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.product-page .detail-side .select-size .size-title .size-subtitle {
+  color: #000;
+}
+.product-page .detail-side .select-size .size-title .size-guide a {
+  color: rgb(121, 120, 120);
+  text-decoration: none;
+}
+.product-page .detail-side .select-size .size {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.product-page .detail-side .select-size .size .size-no {
+  flex: 0 0 28%;
+  text-align: center;
+  padding: 10px 50px;
+  border: 1px solid rgb(194, 192, 192);
+  margin: 3px;
+}
+.product-page .detail-side .select-size .size .size-no a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.product-page .detail-side .select-size .size .size-no:hover {
+  border: 1px solid #000;
+  transition: 0.5s;
+}
+.product-page .detail-side .button-side {
+  width: 100%;
+  margin-top: 50px;
+}
+.product-page .detail-side .button-side .add-to-bag {
+  margin: 20px 0;
+  text-align: center;
+}
+.product-page .detail-side .button-side .add-to-bag button {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  width: 90%;
+  padding: 20px 0 !important;
+  border-radius: 50px;
+}
+.product-page .detail-side .button-side .add-to-bag button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat";
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+.product-page .detail-side .button-side .add-to-bag:hover button {
+  background-color: rgb(172, 169, 169);
+  transition: all 0.5s;
+  border: 1px solid rgb(124, 123, 123);
+}
+.product-page .detail-side .button-side .add-to-bag:hover button a {
+  color: #000;
+}
+.product-page .detail-side .button-side .favorite {
+  text-align: center;
+}
+.product-page .detail-side .button-side .favorite button {
+  width: 90%;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 20px 0 !important;
+  border-radius: 50px;
+  border: 1px solid rgb(172, 172, 172);
+}
+.product-page .detail-side .button-side .favorite button a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat";
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+.product-page .detail-side .button-side .favorite:hover button {
+  border: 1px solid rgb(0, 0, 0);
+  transition: all 0.5s;
+  background-color: rgba(172, 169, 169, 0.178);
+}
+.product-page .detail-side .button-side .favorite:hover button a {
+  color: #000;
+}
+.product-page .detail-side .button-side .favorite:hover button a i {
+  background-color: transparent;
+}
+.product-page .detail-side .transfer-info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+.product-page .detail-side .transfer-info .transfer-icon {
+  margin-right: 20px;
+}
+.product-page .detail-side .transfer-info .transfer-icon i {
+  margin-top: 5px;
+  font-size: 26px;
+}
+.product-page .detail-side .transfer-info .transfer-text {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.product-page .detail-side .transfer-info .transfer-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.product-page .detail-side .return-info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.product-page .detail-side .return-info .return-icon {
+  margin-right: 20px;
+}
+.product-page .detail-side .return-info .return-icon i {
+  margin-top: 5px;
+  font-size: 26px;
+}
+.product-page .detail-side .return-info .return-text {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.product-page .detail-side .return-info .return-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.product-page .detail-side .acordion-reviews {
+  margin-top: 50px;
+  width: 500px !important;
+}
+.product-page .detail-side .acordion-reviews .item {
+  position: relative;
+}
+.product-page .detail-side .acordion-reviews .item:last-child {
+  margin-top: 20px;
+}
+.product-page .detail-side .acordion-reviews .item input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+.product-page .detail-side .acordion-reviews .item input:checked + .acordion-title {
+  background: rgb(235, 233, 233);
+  border-bottom: none;
+}
+.product-page .detail-side .acordion-reviews .item input:checked + .acordion-title .acordion-subtitle i {
+  rotate: 90deg;
+  transition: 0.5s;
+}
+.product-page .detail-side .acordion-reviews .item input:checked + .acordion-title + .acordion-content {
+  max-height: 100vh;
+  transition: 1s;
+  border-bottom: 2px solid #000;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-title {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-title .acordion-subtitle i {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.1s;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews {
+  margin-bottom: 25px;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .slick-prev {
+  position: absolute;
+  top: 91%;
+  left: 1%;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .slick-prev::before {
+  content: url(/img/left-hand.png);
+  color: rgb(17, 101, 104);
+  font-size: 36px;
+  font-weight: lighter;
+  position: absolute;
+  top: 0;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .slick-next {
+  position: absolute;
+  top: 91%;
+  right: 8%;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .slick-next::before {
+  content: url(/img/right-hand.png);
+  color: rgb(17, 101, 104);
+  font-size: 36px;
+  font-weight: lighter;
+  position: absolute;
+  top: 0;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .reviews-showcase {
+  margin: 10px 10px 0 0;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .reviews-showcase .reviews-info {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .reviews-showcase .reviews-info .reviews-icon i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+.product-page .detail-side .acordion-reviews .item .acordion-content .reviews .reviews-showcase .reviews-text p {
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1800px) {
+  .product-page {
+    flex: 0 0 40% !important;
+  }
+  .product-page .product-side .w3-content {
+    height: 360px;
+  }
+  .product-page .detail-side {
+    flex: 0 0 30% !important;
+    max-width: 100%;
+  }
+  .product-page .detail-side .select-size .size .size-no {
+    flex: 0 0 20%;
+  }
+  .product-page .detail-side .add-to-bag button {
+    padding: 15px 0 !important;
+  }
+  .product-page .detail-side .favorite button {
+    padding: 15px 0 !important;
+  }
+  .product-page .detail-side .reviews .slick-next {
+    right: 10%;
+  }
+}/*# sourceMappingURL=content.css.map */

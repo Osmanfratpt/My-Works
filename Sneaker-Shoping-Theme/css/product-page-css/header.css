@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.header {
+  width: 100%;
+  font-family: "Montserrat";
+}
+.header .header-top {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-top .lang {
+  flex: 0 0 30%;
+  margin-left: 30px;
+}
+.header .header-top .lang #language {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 80px;
+  font-family: "Montserrat";
+}
+.header .header-top .lang #language option {
+  color: #fff;
+  background: #000;
+  font-size: 12px;
+}
+.header .header-top .lang #language option:hover {
+  color: transparent;
+}
+.header .header-top .header-logo {
+  flex: 0 0 30%;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Audiowide";
+  text-align: center;
+}
+.header .header-top .header-logo span {
+  font-family: "Splash";
+}
+.header .header-top .header-top-navigation {
+  flex: 0 0 30%;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.header .header-top .header-top-navigation .profil {
+  margin-right: 20px;
+}
+.header .header-top .header-top-navigation .profil a {
+  color: #fff;
+}
+.header .header-top .header-top-navigation .profil a i {
+  font-size: 18px;
+}
+.header .header-top .header-top-navigation .shop-bag a {
+  color: #fff;
+}
+.header .header-top .header-top-navigation .shop-bag a i {
+  font-size: 18px;
+}
+.header .header-bottom {
+  background-color: rgb(30, 2, 49);
+  font-weight: 500;
+}
+.header .header-bottom .category {
+  margin: 0 300px;
+}
+.header .header-bottom .category .drop-title {
+  font-size: 20px;
+}
+.header .header-bottom .category #category-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  height: 50px;
+  padding: 0;
+  list-style: none;
+}
+.header .header-bottom .category #category-list .categories-drop {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .category #category-list .categories-drop a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.header .header-bottom .category #category-list .categories-drop a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .categories-drop a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .categories-drop #dropdown-menu-1 {
+  color: #fff;
+  background-color: rgb(30, 2, 49);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 200px;
+  height: 400px;
+  z-index: -1;
+  list-style: none;
+  opacity: 0;
+}
+.header .header-bottom .category #category-list .categories-drop #dropdown-menu-1 li {
+  padding: 15px 0 15px 10px;
+}
+.header .header-bottom .category #category-list .categories-drop #dropdown-menu-1 li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.header .header-bottom .category #category-list .categories-drop #dropdown-menu-1 li a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .categories-drop #dropdown-menu-1 li a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .categories-drop:hover #dropdown-menu-1 {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.5s;
+  top: 49px;
+}
+.header .header-bottom .category #category-list .filter-drop {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .category #category-list .filter-drop a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.header .header-bottom .category #category-list .filter-drop a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .filter-drop a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .filter-drop #dropdown-menu-2 {
+  color: #fff;
+  background-color: rgb(30, 2, 49);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 200px;
+  height: 350px;
+  z-index: -1;
+  list-style: none;
+  opacity: 0;
+}
+.header .header-bottom .category #category-list .filter-drop #dropdown-menu-2 li {
+  padding: 15px 0 15px 10px;
+}
+.header .header-bottom .category #category-list .filter-drop #dropdown-menu-2 li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.header .header-bottom .category #category-list .filter-drop #dropdown-menu-2 li a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .filter-drop #dropdown-menu-2 li a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .filter-drop:hover #dropdown-menu-2 {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.5s;
+  top: 49px;
+}
+.header .header-bottom .category #category-list .about-drop {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .category #category-list .about-drop a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.header .header-bottom .category #category-list .about-drop a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .about-drop a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .about-drop #dropdown-menu-3 {
+  color: #fff;
+  background-color: rgb(30, 2, 49);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 200px;
+  height: 150px;
+  z-index: -1;
+  list-style: none;
+  opacity: 0;
+}
+.header .header-bottom .category #category-list .about-drop #dropdown-menu-3 li {
+  padding: 15px 0 15px 10px;
+}
+.header .header-bottom .category #category-list .about-drop #dropdown-menu-3 li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.header .header-bottom .category #category-list .about-drop #dropdown-menu-3 li a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .about-drop #dropdown-menu-3 li a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .about-drop:hover #dropdown-menu-3 {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.5s;
+  top: 49px;
+}
+.header .header-bottom .category #category-list .helps-drop {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .category #category-list .helps-drop a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.header .header-bottom .category #category-list .helps-drop a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .helps-drop a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .helps-drop #dropdown-menu-4 {
+  color: #fff;
+  background-color: rgb(30, 2, 49);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 250px;
+  height: 150px;
+  z-index: -1;
+  list-style: none;
+  opacity: 0;
+}
+.header .header-bottom .category #category-list .helps-drop #dropdown-menu-4 li {
+  padding: 15px 0 15px 10px;
+}
+.header .header-bottom .category #category-list .helps-drop #dropdown-menu-4 li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.header .header-bottom .category #category-list .helps-drop #dropdown-menu-4 li a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.header .header-bottom .category #category-list .helps-drop #dropdown-menu-4 li a:hover::after {
+  width: 100%;
+}
+.header .header-bottom .category #category-list .helps-drop:hover #dropdown-menu-4 {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.5s;
+  top: 49px;
+}/*# sourceMappingURL=header.css.map */

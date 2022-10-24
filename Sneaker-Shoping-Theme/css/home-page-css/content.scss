@@ -1,0 +1,713 @@
+.content {
+    font-family: "Montserrat";
+}
+
+.scrolling-text {
+    background-color: transparent;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    height: 40px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='67px' width='400px'><text x='50' y='50' fill='black' opacity='5' font-size='50'>New Brands</text></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    .scroll-left {
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .transparant {
+        color: transparent;
+        opacity: 0;
+    }
+
+    .scroll-left p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        color: rgb(133, 57, 57);
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Audiowide";
+        line-height: 40px;
+        text-align: center;
+        /* Starting position */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        /* Apply animation to this element */
+        -moz-animation: scroll-left 25s linear infinite;
+        -webkit-animation: scroll-left 25s linear infinite;
+        animation: scroll-left 25s linear infinite;
+    }
+
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+        }
+
+        100% {
+            -moz-transform: translateX(-100%);
+        }
+    }
+
+    @-webkit-keyframes scroll-left {
+        0% {
+            -webkit-transform: translateX(100%);
+        }
+
+        100% {
+            -webkit-transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(100%);
+            /* Browser bug fix */
+            transform: translateX(100%);
+        }
+
+        100% {
+            -moz-transform: translateX(-100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(-100%);
+            /* Browser bug fix */
+            transform: translateX(-100%);
+        }
+    }
+}
+
+.content-top-slider {
+    margin: 100px 0;
+
+    .slick-slider {
+        img {
+            width: 60%;
+            height: fit-content;
+            margin: 0 auto;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+
+        .presentation {
+            button {
+                left: 0px;
+                opacity: 1;
+                margin-right: 5px;
+            }
+
+            &::marker {
+                opacity: 0;
+            }
+        }
+    }
+
+    .slick-prev {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        color: transparent;
+
+        &::before {
+            content: '❮';
+            color: rgb(17, 101, 104);
+            font-size: 96px;
+            font-weight: lighter;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 40%;
+        right: 23%;
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        color: transparent;
+
+        &::before {
+            content: '❯';
+            color: rgb(17, 101, 104);
+            font-size: 96px;
+            font-weight: lighter;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+.new-collection {
+    margin: 10% 0;
+
+    .collection-subtitle {
+        text-align: center;
+        margin: 50px 0;
+
+        h1 {
+            font-family: "Audiowide";
+        }
+    }
+
+    .collection-showcase {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-image: url(/img/graffiti-graffiti-brick-wall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0;
+
+        .showcase {
+            flex: 0 0 40%;
+            text-align: center;
+            margin: 10px 0;
+
+            .video {
+                margin: 0 auto;
+                background-image: url(/img/new-collection/new-collection-1.mp4);
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: relative;
+
+                .thevideo {
+                    border-radius: 30px;
+                }
+
+                .video-shop-1 {
+                    width: 120px;
+                    top: 85%;
+                    left: 43%;
+                    position: absolute;
+                    height: 40px;
+                    border-radius: 30px;
+                    background-color: rgb(255, 94, 0);
+                    border-color: transparent;
+                    opacity: 0;
+
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-family: "Audiowide";
+                    }
+
+                    &:hover {
+                        background-color: rgb(27, 130, 226);
+                        transition: all .5s;
+
+                        a {
+                            color: rgb(255, 255, 255);
+                            transition: all .5s;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .video-shop-1 {
+                        opacity: 1;
+                        transition: all 2s;
+                    }
+                }
+            }
+        }
+
+        .showcase-2 {
+            flex: 0 0 40%;
+            text-align: center;
+            margin: 10px 0;
+
+            .video {
+                margin: 0 auto;
+                background-image: url(/img/new-collection/new-collection-2.mp4);
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: relative;
+
+                .thevideo {
+                    border-radius: 30px;
+                }
+
+                .video-shop-2 {
+                    width: 120px;
+                    top: 85%;
+                    left: 43%;
+                    position: absolute;
+                    height: 40px;
+                    border-radius: 30px;
+                    background-color: rgb(0, 0, 0);
+                    border-color: transparent;
+                    opacity: 0;
+
+                    a {
+                        color: rgb(255, 94, 0);
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-family: "Audiowide";
+                    }
+
+                    &:hover {
+                        background-color: rgb(236, 240, 24);
+                        transition: all .5s;
+
+                        a {
+                            color: rgb(0, 0, 0);
+                            transition: all .5s;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .video-shop-2 {
+                        opacity: 1;
+                        transition: all 2s;
+                    }
+                }
+            }
+        }
+
+        .showcase-3 {
+            flex: 0 0 40%;
+            text-align: center;
+            margin: 10px 0;
+
+            .video {
+                margin: 0 auto;
+                background-image: url(/img/new-collection/new-collection-3.mp4);
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: relative;
+
+                .thevideo {
+                    border-radius: 30px;
+                }
+
+                .video-shop-3 {
+                    width: 120px;
+                    top: 85%;
+                    left: 43%;
+                    position: absolute;
+                    height: 40px;
+                    border-radius: 30px;
+                    background-color: rgb(255, 0, 0);
+                    border-color: transparent;
+                    opacity: 0;
+
+                    a {
+                        color: rgb(61, 4, 75);
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-family: "Audiowide";
+                    }
+
+                    &:hover {
+                        background-color: rgb(0, 0, 0);
+                        transition: all .5s;
+
+                        a {
+                            color: rgb(255, 0, 0);
+                            transition: all .5s;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .video-shop-3 {
+                        opacity: 1;
+                        transition: all 2s;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.content-text {
+    text-align: center;
+
+    h1 {
+        font-size: 46px;
+        font-family: "Audiowide";
+
+        span {
+            font-family: "Splash";
+            color: rgb(255, 0, 64);
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.stock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 100px 10% 100px;
+
+    .stock-showcase {
+        flex: 0 0 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        position: relative;
+
+        .stock-img {
+            width: 60%;
+            flex: 0 0 50%;
+            transition: all 0.7s;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: all 0.7s;
+            }
+        }
+
+        .brands {
+            margin-top: 30px;
+
+            p {
+                font-size: 14px;
+                color: rgb(44, 43, 43);
+
+            }
+        }
+
+        .detail {
+            flex-wrap: wrap;
+            width: 65%;
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .price {
+            p {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        &:hover {
+            .stock-img {
+                transform: scale(.95);
+
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .buy {
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            opacity: 0;
+
+            a {
+                color: #fff;
+                background-color: #000;
+                text-decoration: none;
+                border: 2px solid black;
+                padding: 10px 25px;
+                box-shadow: 5px 5px 0 rgb(255, 0, 0);
+            }
+        }
+
+        &:hover {
+            .buy {
+                opacity: 1;
+                transition: 2s;
+            }
+        }
+    }
+}
+
+.content-banner {
+    width: 100%;
+    margin-bottom: 5%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.content-brands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    .brand-showcase {
+        position: relative;
+
+        img {
+            cursor: pointer;
+        }
+
+        .view {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            opacity: 0;
+
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+                font-weight: 600;
+                border: 2px solid #000;
+                padding: 5px 10px;
+                box-shadow: 2px 2px 0px 2px red;
+            }
+        }
+
+        &:hover {
+            img {
+                rotate: 2000deg;
+                opacity: 0;
+                transform: scale(0.1);
+                transition: all 3s;
+            }
+
+            .view {
+                opacity: 1;
+                transition: all 4s;
+            }
+        } 
+    }
+}
+
+.stock-2-subtitle {
+    margin-top: 5%;
+    text-decoration: underline;
+
+    h1 {
+        text-align: center;
+        font-size: 46px;
+        font-family: "Audiowide";
+        letter-spacing: 2px;
+    }
+}
+
+.stock-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 100px 10% 100px;
+
+    .stock-2-showcase {
+        flex: 0 0 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        position: relative;
+
+        .stock-2-img {
+            width: 60%;
+            flex: 0 0 50%;
+            transition: all 0.7s;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: all 0.7s;
+            }
+
+        }
+
+        .stock-2-brands {
+            margin-top: 30px;
+
+            p {
+                font-size: 14px;
+                color: rgb(44, 43, 43);
+
+            }
+        }
+
+        .stock-2-detail {
+            flex-wrap: wrap;
+            width: 65%;
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .stock-2-price {
+            p {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        &:hover {
+            .stock-2-img {
+                transform: scale(.95);
+
+                img {
+                    transform: scale(1.8);
+                }
+            }
+        }
+
+        .buy-2 {
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            opacity: 0;
+
+            a {
+                color: #fff;
+                background-color: #000;
+                text-decoration: none;
+                border: 2px solid black;
+                padding: 10px 25px;
+                box-shadow: 5px 5px 0 rgb(255, 0, 0);
+            }
+        }
+
+        &:hover {
+            .buy-2 {
+                opacity: 1;
+                transition: 2s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .content {
+        .collection-showcase {
+            .showcase {
+                flex: 0 0 30%;
+                text-align: center;
+                margin: 10px 40px;
+
+                .video {
+                    margin: 0 auto;
+                    background-image: url(/img/new-collection/new-collection-1.mp4);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+
+                    .thevideo {
+                        border-radius: 30px;
+                        width: 100%;
+                    }
+                    .video-shop-1 {
+                        width: 120px;
+                        top: 85%;
+                        left: 38%;
+                        position: absolute;
+                        height: 40px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+
+
+            .showcase-2 {
+                flex: 0 0 30%;
+                text-align: center;
+                margin: 10px 40px;
+
+                .video {
+                    margin: 0 auto;
+                    background-image: url(/img/new-collection/new-collection-1.mp4);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+
+                    .thevideo {
+                        border-radius: 30px;
+                        width: 100%;
+                    }
+
+                    .video-shop-2 {
+                        width: 120px;
+                        top: 85%;
+                        left: 38%;
+                        position: absolute;
+                        height: 40px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+
+            .showcase-3 {
+                flex: 0 0 30%;
+                text-align: center;
+                margin: 10px 40px;
+
+                .video {
+                    margin: 0 auto;
+                    background-image: url(/img/new-collection/new-collection-1.mp4);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+
+                    .thevideo {
+                        border-radius: 30px;
+                        width: 100%;
+                    }
+
+                    .video-shop-3 {
+                        width: 120px;
+                        top: 85%;
+                        left: 38%;
+                        position: absolute;
+                        height: 40px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+        .new-collection{
+
+        }
+        .stock {
+            .stock-showcase {
+                .buy {
+                    top: 25%;
+                    left: 35%;
+                }
+            }
+        }
+        .stock-2 {
+            .stock-2-showcase {
+                .buy-2{
+                    top: 25%;
+                    left: 35%;
+                }
+            }
+        }
+    }
+
+}

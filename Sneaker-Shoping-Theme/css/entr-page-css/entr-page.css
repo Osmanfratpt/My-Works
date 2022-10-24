@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.entr-page {
+  background: linear-gradient(45deg, rgb(182, 180, 180) 10%, rgb(221, 220, 220) 100%);
+  width: 100%;
+  height: 937px;
+  display: block;
+  position: relative;
+}
+.entr-page .credit-card {
+  position: absolute;
+  top: 38%;
+  left: 40%;
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(70deg, rgb(0, 0, 0) 5%, rgb(44, 44, 44) 100%);
+  border-radius: 10px;
+}
+.entr-page .credit-card .credit-card-inner {
+  color: #fff;
+  position: relative;
+  font-family: "Montserrat";
+  width: 350px;
+  height: 200px;
+}
+.entr-page .credit-card .credit-card-inner .arrow-1 {
+  position: absolute;
+  top: -40%;
+  right: -75%;
+  width: 100%;
+  rotate: 100deg;
+  opacity: 0;
+}
+.entr-page .credit-card .credit-card-inner .arrow-1 img {
+  max-width: 70%;
+}
+.entr-page .credit-card .credit-card-inner .arrow-2 {
+  position: absolute;
+  top: -85%;
+  right: -34%;
+  width: 100%;
+  rotate: -18deg;
+  transform: scaleX(-1);
+  opacity: 0;
+}
+.entr-page .credit-card .credit-card-inner .arrow-2 img {
+  max-width: 70%;
+}
+.entr-page .credit-card .credit-card-inner .card-subtitle {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+.entr-page .credit-card .credit-card-inner .card-chip {
+  position: absolute;
+  top: 24%;
+  left: 7%;
+}
+.entr-page .credit-card .credit-card-inner .card-chip img {
+  width: 50px;
+}
+.entr-page .credit-card .credit-card-inner button {
+  font-family: "Dancing Script";
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  font-size: 24px;
+}
+.entr-page .credit-card .credit-card-inner button a {
+  text-decoration: none;
+  color: #fff;
+}
+.entr-page .credit-card .credit-card-inner button a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.entr-page .credit-card .credit-card-inner button a:hover::after {
+  width: 100%;
+}
+.entr-page .credit-card .credit-card-inner .card-no {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  font-size: 24px;
+}
+.entr-page .credit-card .credit-card-inner .card-no span {
+  margin-right: 16px;
+}
+.entr-page .credit-card .credit-card-inner .date {
+  position: absolute;
+  top: 70%;
+  left: 63%;
+  margin: 0 auto;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.entr-page .credit-card .credit-card-inner .date span {
+  font-size: 7px;
+  width: 25px;
+  display: inline-block;
+  text-align: center;
+}
+.entr-page .credit-card .credit-card-inner .date i {
+  font-size: 10px;
+  margin-right: 7px;
+}
+.entr-page .credit-card .credit-card-inner .name {
+  position: absolute;
+  top: 80%;
+  left: 8%;
+}
+.entr-page .credit-card .credit-card-inner:hover .arrow-1 {
+  opacity: 1;
+  transition: 2s;
+}
+.entr-page .credit-card .credit-card-inner:hover .arrow-2 {
+  opacity: 1;
+  transition: 5s;
+}
+
+@media screen and (max-width: 1800px) {
+  .entr-page {
+    height: 625px;
+  }
+  .credit-card {
+    top: 40%;
+    left: 40%;
+  }
+}/*# sourceMappingURL=entr-page.css.map */
