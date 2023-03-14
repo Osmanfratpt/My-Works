@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+  background-color: #000000;
+  border-top: 2px solid #ffff01;
+  border-bottom: 2px solid #ffff01;
+}
+.footer .footer-part {
+  margin: 0 1.5rem;
+}
+.footer .footer-part h1 {
+  letter-spacing: 10px;
+  font-family: "Megrim";
+  font-weight: bold;
+  color: #ffff01;
+}/*# sourceMappingURL=footer.css.map */
